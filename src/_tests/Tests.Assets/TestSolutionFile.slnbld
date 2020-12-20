@@ -1,0 +1,10 @@
+<Solution>
+	<Project>C:\This\Is\A Windows Absolute Path.lvproj</Project>
+	<Project>Relative\Path.lvproj</Project>
+	<Project>..\Relative\Path.lvproj</Project>
+	<Project>Relate Path/Forward Slash.lvproj</Project>
+	<Project>../Relate Path/Forward Slash.lvproj</Project>
+	<Project>/C/Linux/Absolute/Path.lvproj</Project>
+	<AddPackedLib>..\Relative\Path.lvlibp</AddPackedLib>
+	<AddPackedLib>/C/Linux/Absolute/Path.lvlibp::ThisPath.lvlib</AddPackedLib>
+</Solution>
