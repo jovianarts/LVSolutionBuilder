@@ -222,7 +222,7 @@ MyAppRepo
 
 ## Usage
 
-From its UI, Solution Builder can act upon a directory or if given a file that specifies all the projects, can act upon the projects listed in that file.
+Solution Builder can be operated on through its user interface or by command-line.
 
 ![Solution Builder UI](docs/SolutionBuilderUI.png)
 
@@ -244,7 +244,7 @@ From its UI, Solution Builder can act upon a directory or if given a file that s
 When using a solution file, the following is an example valid content tags:
 ```
 <Solution>
-	<Project></Project>
+	<ProjectPath></ProjectPath>
 	<AddPackedLib></AddPackedLib>
 </Solution>
 ```
@@ -252,18 +252,18 @@ When using a solution file, the following is an example valid content tags:
 <table>
 <tr><td style="text-align:center;font-weight:bold">Tag</td><td style="text-align:center;font-weight:bold">Explanation</td></tr>
 <tr><td>Solution</td><td>Root node in the file</td></tr>
-<tr><td>Project</td><td>Node that contains a path value used by solution builder to find build specifications. Multiple <i>Project</i> tags can be listed in a file. Valid path formats are as follows:
+<tr><td>ProjectPath</td><td>Node that contains a path value used by solution builder to find build specifications. Multiple <i>ProjectPath</i> tags can be listed in a file. Valid path formats are as follows:
 
 ```
-	<Project>C:\This\Is\A Windows Absolute Path.lvproj</Project>
-	<Project>Relative\Path.lvproj</Project>
-	<Project>..\Relative\Path.lvproj</Project>
-	<Project>Relate Path/Forward Slash.lvproj</Project>
-	<Project>../Relate Path/Forward Slash.lvproj</Project>
-	<Project>/C/Linux/Absolute/Path.lvproj</Project>
+	<ProjectPath>C:\This\Is\A Windows Absolute Path.lvproj</ProjectPath>
+	<ProjectPath>Relative\Path.lvproj</ProjectPath>
+	<ProjectPath>..\Relative\Path.lvproj</ProjectPath>
+	<ProjectPath>Relate Path/Forward Slash.lvproj</ProjectPath>
+	<ProjectPath>../Relate Path/Forward Slash.lvproj</ProjectPath>
+	<ProjectPath>/C/Linux/Absolute/Path.lvproj</ProjectPath>
 ```
 </td></tr>
-<tr><td>AddPackedLib</td><td>Node that contains a path value to a pre-built PPL to be used during the specified build. Multiple <i>AddPackedLib</i> tags can be listed in a file. Additionally and optionally, when a source Library is named differently than its PPL counterpart, the original name can be specified using the format "path_to_ppl.lvlibp::original_name". Valid formats are as follows and the path can be formated similar to Project paths:
+<tr><td>AddPackedLib</td><td>Node that contains a path value to a pre-built PPL to be used during the specified build. Multiple <i>AddPackedLib</i> tags can be listed in a file. Additionally and optionally, when a source Library is named differently than its PPL counterpart, the original name can be specified using the format "path_to_ppl.lvlibp::original_name". Valid formats are as follows and the path can be formated similar to ProjectPath paths:
 
 ```
 	<AddPackedLib>Relative\Path.lvlibp</AddPackedLib>  # When the PPL and source names match
@@ -272,12 +272,37 @@ When using a solution file, the following is an example valid content tags:
 </td></tr>
 </table>
 
+### Invoking by Command-line
+
+Invoking the packed tool from its LLB requires a command similar to the following:
+
+```
+Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path path_to_some_project\myProject.lvproj -Quiet -AddPackedLib path_to_some_ppl\TheFile.lvlibp::TheOriginalLib.lvlib
+```
+
+The accepted command-line arguments are:
+
+- -Path: Path to the folder, project, or solution file.
+- -AddPackedLib: Path to a pre-built PPL (optional original source library name specified after "::"). Can specify multiple parameter/path pairs in one command.
+- -Quiet: Auto close once build as completed (should not be used with -Preview)
+- -Preview: Does not build but instead displays the list and build order of each build specification. Recommended for validation.
+
 ## How to Build
 
-*To come...*
+The owning LabVIEW project contains a build specification to create a self-contained LLB.
+
+1. Open the project
+1. Right-click the build specification
+
+## How to Test
+
+The owning LabVIEW project contains a *_test* folder containing a VI named `RunTheTests.vi`; Run that VI and verify that the results all pass.
 
 ## Contributions
 
 This project welcomes Issues, Discussions, and Pull Requests.
 
-
+1. Add new tests for the added functionality
+1. Verify that all the tests pass
+1. Verify that the build passes
+1. Submit a PR and fill out the template fully.
