@@ -19,19 +19,19 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{38198BCD-1D67-4C72-8C4C-D452E88E487F}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">ExternalLibrary</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/ExternalLib</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BEE8AB76-6618-4A78-A64C-27D303ED58AB}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ExtLibrary.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/ExtLibrary.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/ExternalLib/ExtLibrary.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/ExternalLib</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D1A43E2F-E2B2-4C9F-AD81-D2345C7B83F6}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9A5A2F03-58CB-4651-918D-E561C60BF543}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ExternalLib.lvlib</Property>
