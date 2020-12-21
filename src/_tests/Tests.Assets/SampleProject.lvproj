@@ -18,7 +18,9 @@
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="SampleDependentLib.lvlib" Type="Library" URL="../SampleDependentLib.lvlib"/>
 		<Item Name="SampleLib.lvlib" Type="Library" URL="../SampleLib.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="ExternalDep.lvlib" Type="Library" URL="../ExternalDep/ExternalDep.lvlib"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Application" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
