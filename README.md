@@ -306,3 +306,25 @@ This project welcomes Issues, Discussions, and Pull Requests.
 1. Verify that all the tests pass
 1. Verify that the build passes
 1. Submit a PR and fill out the template fully.
+
+## Known Issues
+
+<table>
+<tr><td style="text-align:center;font-weight:bold">Issue</td><td style="text-align:center;font-weight:bold">Workaround</td></tr>
+<tr><td>
+When running `SolutionBuilder.vi` from its parent project, if the application returns an error, there is a possibility that on the next runs an LV Application Builder error will be returned for reasons unexplained. The error is:
+
+```
+Error 1370 occurred at an unidentified location
+Possible reason(s):
+LabVIEW: (Hex 0x55A) The selected build failed to complete.
+```
+</td><td>
+There are a few ways around the issue:
+<ul>
+<li>Exit LabVIEW and retry to build.</li>
+<li>Instead of running SolutionBuilder from its owning project, open the VI directly from `/src`.</li>
+<li>Instead of running SolutionBuilder from its owning project, open the VI directly from the built release LLB.</li>
+</ul>
+</td></tr>
+</table>

@@ -18,7 +18,9 @@
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="SampleDependentLib.lvlib" Type="Library" URL="../SampleDependentLib.lvlib"/>
 		<Item Name="SampleLib.lvlib" Type="Library" URL="../SampleLib.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="ExternalDep.lvlib" Type="Library" URL="../ExternalDep/ExternalDep.lvlib"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Application" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
@@ -31,19 +33,18 @@
 				<Property Name="Bld_buildSpecName" Type="Str">My Application</Property>
 				<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E912A177-1BC2-4676-ADDD-CFBBBDBEE124}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests/Application.exe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/Application.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DDEF8C8E-028E-40C0-BB7A-DECF2D246C93}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{99D76878-9234-4CB9-8CCD-E9609F1B5CCF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
@@ -69,24 +70,23 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{9F5A6997-1072-4A85-8FD6-1F8A08700099}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">My DLL</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B2D7D636-6C57-4BAA-8F01-946E4633021B}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SharedLib.dll</Property>
-				<Property Name="Destination[0].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests/SharedLib.dll</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/SharedLib.dll</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Dll_compatibilityWith2011" Type="Bool">false</Property>
 				<Property Name="Dll_delayOSMsg" Type="Bool">true</Property>
 				<Property Name="Dll_headerGUID" Type="Str">{B9CCFCF0-895D-414F-BB55-8ADDBCE4006E}</Property>
 				<Property Name="Dll_libGUID" Type="Str">{4035CD2F-8AAE-43CF-8B31-02CD0B389825}</Property>
 				<Property Name="Dll_privateExecSys" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{26D513DF-9C71-4C28-B03E-A0F96BF3B699}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{99D76878-9234-4CB9-8CCD-E9609F1B5CCF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Helper/SampleCommonLib.lvlib/SampleCommonVI.vi</Property>
@@ -107,20 +107,19 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{C77E9408-E149-4BB0-ADA0-8AB32B2CB477}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">My Packed Library</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8ABE8629-BDB8-46C6-BB27-633AE8BB7153}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SampleLib.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests/SampleLib.lvlibp</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/SampleLib.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3D1A2B75-BF09-4DD3-8EA9-8C1BB6DE9A8E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{99D76878-9234-4CB9-8CCD-E9609F1B5CCF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SampleLib.lvlib</Property>
@@ -157,18 +156,17 @@
 				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
 				<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{CE1E3DD1-6FDA-4AC4-AE2F-95CA0C584080}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{ABF3A16D-D106-46AC-AD59-BC93D2A94EB2}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{99D76878-9234-4CB9-8CCD-E9609F1B5CCF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
@@ -197,20 +195,19 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{F2DF8815-C340-41AC-A257-9C3D53424975}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleDependentLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{0B088D96-0633-4618-B192-84D6244D2EEC}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SampleDependentLib.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests/SampleDependentLib.lvlibp</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/SampleDependentLib.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/E/Repos/LVDependencyInspector/utils/obj/tests</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{515171F2-ABD4-401C-9397-E5AE39DBECC5}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{99D76878-9234-4CB9-8CCD-E9609F1B5CCF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SampleDependentLib.lvlib</Property>
