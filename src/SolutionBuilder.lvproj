@@ -13,11 +13,34 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_tests" Type="Folder">
-			<Item Name="Tests.Assets" Type="Folder" URL="../_tests/Tests.Assets">
-				<Property Name="NI.DISK" Type="Bool">true</Property>
+			<Item Name="Tests.Assets" Type="Folder">
+				<Item Name="ExternalDep" Type="Folder">
+					<Item Name="ExternalDep.lvlib" Type="Library" URL="../_tests/Tests.Assets/ExternalDep/ExternalDep.lvlib"/>
+					<Item Name="ExternalDep.lvproj" Type="Document" URL="../_tests/Tests.Assets/ExternalDep.lvproj"/>
+				</Item>
+				<Item Name="ExternalLib" Type="Folder">
+					<Item Name="ExternalLib.lvlib" Type="Library" URL="../_tests/Tests.Assets/ExternalLib.lvlib"/>
+					<Item Name="ExternalLibProject.lvproj" Type="Document" URL="../_tests/Tests.Assets/ExternalLibProject.lvproj"/>
+				</Item>
+				<Item Name="SampleCommonLib" Type="Folder">
+					<Item Name="SampleCommonLib.lvlib" Type="Library" URL="../_tests/Tests.Assets/SampleCommonLib.lvlib"/>
+				</Item>
+				<Item Name="SampleDependentLib" Type="Folder">
+					<Item Name="SampleDependentLib.lvlib" Type="Library" URL="../_tests/Tests.Assets/SampleDependentLib.lvlib"/>
+				</Item>
+				<Item Name="SampleLib" Type="Folder">
+					<Item Name="SampleLib.lvlib" Type="Library" URL="../_tests/Tests.Assets/SampleLib.lvlib"/>
+					<Item Name="SampleProject.lvproj" Type="Document" URL="../_tests/Tests.Assets/SampleProject.lvproj"/>
+				</Item>
+				<Item Name="Solution files" Type="Folder">
+					<Item Name="EmptyTestSolutionFile.slnbld" Type="Document" URL="../_tests/Tests.Assets/EmptyTestSolutionFile.slnbld"/>
+					<Item Name="SampleProject.slnbld" Type="Document" URL="../_tests/Tests.Assets/SampleProject.slnbld"/>
+					<Item Name="TestSolutionFile.slnbld" Type="Document" URL="../_tests/Tests.Assets/TestSolutionFile.slnbld"/>
+				</Item>
+				<Item Name="Main.vi" Type="VI" URL="../_tests/Tests.Assets/Main.vi"/>
 			</Item>
-			<Item Name="Tests.SolutionBuilder" Type="Folder" URL="../_tests/Tests.SolutionBuilder">
-				<Property Name="NI.DISK" Type="Bool">true</Property>
+			<Item Name="Tests.SolutionBuilder" Type="Folder">
+				<Item Name="Tests.SolutionBuilder.lvlib" Type="Library" URL="../_tests/Tests.SolutionBuilder/Tests.SolutionBuilder.lvlib"/>
 			</Item>
 			<Item Name="RunAllTests.vi" Type="VI" URL="../_tests/RunAllTests.vi"/>
 		</Item>
@@ -27,8 +50,10 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Compare Two Paths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Compare Two Paths.vi"/>
+				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 				<Item Name="Invoke BuildTarget.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Invoke BuildTarget.vi"/>
+				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
 				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="LVReplaceWithSaveOptionEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVReplaceWithSaveOptionEnum.ctl"/>
