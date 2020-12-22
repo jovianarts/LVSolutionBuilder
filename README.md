@@ -222,7 +222,7 @@ MyAppRepo
 
 ## Usage
 
-Solution Builder can be operated on through its user interface or by command-line.
+Solution Builder can be operated on through its user interface or [by command-line](#invoking-by-command-line).
 
 ![Solution Builder UI](docs/SolutionBuilderUI.png)
 
@@ -274,6 +274,8 @@ When using a solution file, the following is an example valid content tags:
 
 ### Invoking by Command-line
 
+>Note: It's important to close LabVIEW between invocations of the tool from the command-line since LabVIEW only reads command-line arguments on launch. To read the new command-line arguments, LabVIEW must close and relaunch with the new arguments. To help with exiting LabVIEW between calls, use the `-Quiet` option.
+
 Invoking the packed tool from its LLB requires a command similar to the following:
 
 ```
@@ -292,19 +294,23 @@ The accepted command-line arguments are:
 The owning LabVIEW project contains a build specification to create a self-contained LLB.
 
 1. Open the project
-1. Right-click the build specification
+1. Right-click the build specifications and select *Build*.
 
 ## How to Test
 
-The owning LabVIEW project contains a *_test* folder containing a VI named `RunTheTests.vi`; Run that VI and verify that the results all pass.
+Open and run `/src/_test/RunTheTests.vi` then verify that the results all pass.
+
+>Note: To avoid the issue listed in the [Known Issues](#known-issues), run the main test VI directly instead of from the owning project.
 
 ## Contributions
 
 This project welcomes Issues, Discussions, and Pull Requests.
 
 1. Add new tests for the added functionality
-1. Verify that all the tests pass
-1. Verify that the build passes
+1. Verify that all the tests pass (refer to the [How to Test](#how-to-test) section)
+1. Verify that the builds pass - there should only be 2 files generated
+   - /obj/SolutionBuilder.llb
+   - /obj/Package/solutionbuilder_x.x.x-x_windows_all.nipkg (where x are the version and build numbers)
 1. Submit a PR and fill out the template fully.
 
 ## Known Issues
