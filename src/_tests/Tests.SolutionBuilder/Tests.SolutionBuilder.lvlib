@@ -8,9 +8,12 @@
 
 </Property>
 	<Item Name="test_BuildAssets.vi" Type="VI" URL="../test_BuildAssets.vi"/>
+	<Item Name="test_CalculateSpecificationBuildOrder.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder.vi"/>
 	<Item Name="test_ConstructorDefaultValues.vi" Type="VI" URL="../test_ConstructorDefaultValues.vi"/>
 	<Item Name="test_FindProjects.vi" Type="VI" URL="../test_FindProjects.vi"/>
+	<Item Name="test_GetItemInformationFromProjects.vi" Type="VI" URL="../test_GetItemInformationFromProjects.vi"/>
 	<Item Name="test_GetItemInfosFromProjectFile.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile.vi"/>
 	<Item Name="test_LoadCommandlineArgs.vi" Type="VI" URL="../test_LoadCommandlineArgs.vi"/>
 	<Item Name="test_ParseSolutionFile.vi" Type="VI" URL="../test_ParseSolutionFile.vi"/>
+	<Item Name="test_SetItemInfoDependencies.vi" Type="VI" URL="../test_SetItemInfoDependencies.vi"/>
 </Library>

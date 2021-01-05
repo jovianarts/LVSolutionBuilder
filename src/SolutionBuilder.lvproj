@@ -39,6 +39,9 @@
 				</Item>
 				<Item Name="Main.vi" Type="VI" URL="../_tests/Tests.Assets/Main.vi"/>
 			</Item>
+			<Item Name="Tests.BuildManager" Type="Folder">
+				<Item Name="Tests.BuildManager.lvlib" Type="Library" URL="../_tests/Tests.BuildManager/Tests.BuildManager.lvlib"/>
+			</Item>
 			<Item Name="Tests.SolutionBuilder" Type="Folder">
 				<Item Name="Tests.SolutionBuilder.lvlib" Type="Library" URL="../_tests/Tests.SolutionBuilder/Tests.SolutionBuilder.lvlib"/>
 			</Item>
@@ -62,6 +65,7 @@
 				<Item Name="Set Intersection.vim" Type="VI" URL="/&lt;vilib&gt;/set operations/Set Intersection.vim"/>
 				<Item Name="Set Union.vim" Type="VI" URL="/&lt;vilib&gt;/set operations/Set Union.vim"/>
 				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
+				<Item Name="Synchronize Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Synchronize Data Flow.vim"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
