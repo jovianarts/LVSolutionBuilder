@@ -42,6 +42,9 @@
 			<Item Name="Tests.BuildManager" Type="Folder">
 				<Item Name="Tests.BuildManager.lvlib" Type="Library" URL="../_tests/Tests.BuildManager/Tests.BuildManager.lvlib"/>
 			</Item>
+			<Item Name="Tests.General" Type="Folder">
+				<Item Name="Tests.General.lvlib" Type="Library" URL="../_tests/Tests.General/Tests.General.lvlib"/>
+			</Item>
 			<Item Name="Tests.SolutionBuilder" Type="Folder">
 				<Item Name="Tests.SolutionBuilder.lvlib" Type="Library" URL="../_tests/Tests.SolutionBuilder/Tests.SolutionBuilder.lvlib"/>
 			</Item>
