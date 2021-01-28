@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="20008000">
+<Project Type="Project" LVVersion="19008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -43,8 +43,6 @@
 			</Item>
 			<Item Name="My Package" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
-				<Property Name="NIPKG_allDependenciesToFeed" Type="Bool">false</Property>
-				<Property Name="NIPKG_allDependenciesToSystemLink" Type="Bool">false</Property>
 				<Property Name="NIPKG_certificates" Type="Bool">true</Property>
 				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
 				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/My Package/Feed</Property>
@@ -54,8 +52,7 @@
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/My Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="NIPKG_lastBuiltPackage" Type="Str"></Property>
-				<Property Name="NIPKG_license" Type="Ref"></Property>
-				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
+				<Property Name="NIPKG_license" Type="Ref">/</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
 				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
@@ -89,11 +86,11 @@
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">SampleProject</Property>
 				<Property Name="PKG_shortcuts[0].Target.Child" Type="Str">{728AF30F-340A-4A97-BDCD-17711B4FD27B}</Property>
 				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{870B4235-1F0B-4BC1-ADCC-4FBB34F7B8CA}</Property>
-				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref"></Property>
+				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/</Property>
 				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">1</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{870B4235-1F0B-4BC1-ADCC-4FBB34F7B8CA}</Property>
-				<Property Name="PKG_sources[0].ID" Type="Ref"></Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">EXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">SampleProject</Property>
 				<Property Name="PKG_version" Type="Str">1.0.0</Property>
