@@ -4,7 +4,7 @@ Solution Builder is a tool for building LabVIEW project build specifications in 
 
 ## Minimum Compatible LabVIEW Version
 
-LabVIEW 2020 - Solution Builder uses a VI Server method introduced in LabVIEW 2020 to replace project items in memory.
+LabVIEW 2019 - Solution Builder uses a VI Server method introduced in LabVIEW 2019 to replace project items in memory.
 
 ## Use Case
 
