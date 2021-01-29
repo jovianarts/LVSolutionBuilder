@@ -9,4 +9,5 @@
 </Property>
 	<Item Name="test_AllCodeInCorrectLVVersion.vi" Type="VI" URL="../test_AllCodeInCorrectLVVersion.vi"/>
 	<Item Name="test_AllCodeSourceOnly.vi" Type="VI" URL="../test_AllCodeSourceOnly.vi"/>
+	<Item Name="test_BuildBinaries.vi" Type="VI" URL="../test_BuildBinaries.vi"/>
 </Library>
