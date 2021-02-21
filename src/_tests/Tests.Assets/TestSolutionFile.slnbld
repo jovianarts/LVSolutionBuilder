@@ -5,6 +5,6 @@
 	<ProjectPath>Relate Path/Forward Slash.lvproj</ProjectPath>
 	<ProjectPath>../Relate Path/Forward Slash.lvproj</ProjectPath>
 	<ProjectPath>/C/Linux/Absolute/Path.lvproj</ProjectPath>
-	<AddPackedLib>..\Relative\Path.lvlibp</AddPackedLib>
-	<AddPackedLib>/C/Linux/Absolute/Path.lvlibp::ThisPath.lvlib</AddPackedLib>
+	<AddPackedLib>PATH=..\Relative\Path.lvlibp</AddPackedLib>
+	<AddPackedLib>PATH=/C/Linux/Absolute/Path.lvlibp::NAME=ThisPath.lvlib</AddPackedLib>
 </Solution>
