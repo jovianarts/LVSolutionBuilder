@@ -104,8 +104,8 @@
 			</Item>
 		</Item>
 	</Item>
-	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
-		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
+	<Item Name="cRIO-9082" Type="RT CompactRIO">
+		<Property Name="alias.name" Type="Str">cRIO-9082</Property>
 		<Property Name="alias.value" Type="Str">0.0.0.0</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,PharLap;CPU,x86;DeviceCode,753D;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">753D</Property>
@@ -197,7 +197,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{A9CCF4DA-B131-44DF-98EE-EBE1325FB8AA}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/SampleDependentLib.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9082/SampleDependentLib.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
@@ -237,7 +237,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{A9CCF4DA-B131-44DF-98EE-EBE1325FB8AA}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/SampleLib.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9082/SampleLib.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
@@ -256,8 +256,8 @@
 			</Item>
 		</Item>
 	</Item>
-	<Item Name="RT CompactRIO Target 2" Type="RT CompactRIO">
-		<Property Name="alias.name" Type="Str">RT CompactRIO Target 2</Property>
+	<Item Name="cRIO-9068" Type="RT CompactRIO">
+		<Property Name="alias.name" Type="Str">cRIO-9068</Property>
 		<Property Name="alias.value" Type="Str">0.0.0.0</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76D6;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76D6</Property>
@@ -349,7 +349,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{AE574C77-D69B-4B36-AA1A-D463CB0494B7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target 2/SampleDependentLib.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9068/SampleDependentLib.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
@@ -388,7 +388,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{AE574C77-D69B-4B36-AA1A-D463CB0494B7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target 2/SampleLib.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9068/SampleLib.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
