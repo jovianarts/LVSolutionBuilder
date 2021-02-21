@@ -1,4 +1,6 @@
 <Solution>
 	<ProjectPath>SampleProjectTargets.lvproj</ProjectPath>
 	<AddPackedLib>PATH=..\obj\ExternalDep\ExtDependency.lvlibp::NAME=ExternalDep.lvlib</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\ExternalDep\ExtDependency.lvlibp::NAME=ExternalDep.lvlib::TARGET=cRIO-9082</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\ExternalDep\ExtDependency.lvlibp::NAME=ExternalDep.lvlib::TARGET=cRIO-9068</AddPackedLib>
 </Solution>
