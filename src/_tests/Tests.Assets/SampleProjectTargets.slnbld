@@ -1,5 +1,5 @@
 <Solution>
 	<ProjectPath>ExternalDepTargets.lvproj</ProjectPath>
 	<ProjectPath>SampleProjectTargets.lvproj</ProjectPath>
-	<ProjectPath>SampleProjectTargets2.lvproj</ProjectPath>
+	<ProjectPath>SampleProjectTargets_Linux.lvproj</ProjectPath>
 </Solution>

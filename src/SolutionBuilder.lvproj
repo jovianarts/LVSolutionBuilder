@@ -46,7 +46,6 @@
 				<Item Name="Tests.General.lvlib" Type="Library" URL="../_tests/Tests.General/Tests.General.lvlib"/>
 			</Item>
 			<Item Name="Tests.SolutionBuilder" Type="Folder">
-				<Item Name="test.vi" Type="VI" URL="../_tests/test.vi"/>
 				<Item Name="Tests.SolutionBuilder.lvlib" Type="Library" URL="../_tests/Tests.SolutionBuilder/Tests.SolutionBuilder.lvlib"/>
 			</Item>
 			<Item Name="RunAllTests.vi" Type="VI" URL="../_tests/RunAllTests.vi"/>
@@ -128,7 +127,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME.llb</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{167431DC-0194-4791-A0EA-37952ABDC34F}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME.llb</Property>
@@ -156,7 +155,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">true</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../obj/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">solutionbuilder_1.0.0-1_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">solutionbuilder_1.0.0-2_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -164,16 +163,16 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">2</Property>
+				<Property Name="PKG_buildNumber" Type="Int">3</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">SolutionBuilderPackage</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[0].MinVersion" Type="Str">20.0.1.49153-0+f1</Property>
+				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2020-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
 				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
 				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
@@ -190,6 +189,7 @@
 				<Property Name="PKG_feedName" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
+				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
 				<Property Name="PKG_maintainer" Type="Str">Jovianarts &lt;&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../obj/Package</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>

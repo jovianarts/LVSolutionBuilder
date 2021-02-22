@@ -263,11 +263,18 @@ When using a solution file, the following is an example valid content tags:
 	<ProjectPath>/C/Linux/Absolute/Path.lvproj</ProjectPath>
 ```
 </td></tr>
-<tr><td>AddPackedLib</td><td>Node that contains a path value to a pre-built PPL to be used during the specified build. Multiple <i>AddPackedLib</i> tags can be listed in a file. Additionally and optionally, when a source Library is named differently than its PPL counterpart, the original name can be specified using the format "path_to_ppl.lvlibp::original_name". Valid formats are as follows and the path can be formated similar to ProjectPath paths:
+<tr><td>AddPackedLib</td><td>Node that contains a path value to a pre-built PPL to be used during the specified build. Multiple <i>AddPackedLib</i> tags can be listed in a file. Additionally and optionally, when a source Library is named differently than its PPL counterpart, and the Target under which to make this substitution can be listed. The following sub-token are supported:
+
+- `PATH=` Path to specify the path to the build PPL. This sub-token is required.
+- `NAME=` Name of the original library. This sub-token is optional. If no name is listed, the filename from the path will be used, minus the "p" in the extension. `ThisLib.lvlibp` will become `ThisLib.lvlib`.
+- `TARGET=` Name of the project's TargetItem. This sub-token is optional. If not Target is listed, `My Computer` will be used.
+
+Valid formats are as follows and the path can be formated similar to ProjectPath paths:
 
 ```
-	<AddPackedLib>Relative\Path.lvlibp</AddPackedLib>  # When the PPL and source names match
-	<AddPackedLib>..\Relative\Path.lvlibp::OriginalName.lvlib</AddPackedLib>  # When the PPL and source names do not match
+	<AddPackedLib>PATH=Relative\Path.lvlibp</AddPackedLib>  # Will implicitly append "::NAME=Path.lvlib::TARGET=My Computer" 
+	<AddPackedLib>PATH=..\Relative\Path.lvlibp::NAME=OriginalName.lvlib</AddPackedLib>  # Will implicitly append "::TARGET=My Computer" 
+	<AddPackedLib>PATH=..\Relative\OtherPath.lvlibp::NAME=OriginalName.lvlib::TARGET=cRIO-9082</AddPackedLib>
 ```
 </td></tr>
 </table>
@@ -279,13 +286,13 @@ When using a solution file, the following is an example valid content tags:
 Invoking the packed tool from its LLB requires a command similar to the following:
 
 ```
-Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path path_to_some_project\myProject.lvproj -Quiet -AddPackedLib path_to_some_ppl\TheFile.lvlibp::TheOriginalLib.lvlib
+Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path path_to_some_project\myProject.lvproj -Quiet -AddPackedLib PATH=path_to_some_ppl\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068
 ```
 
 The accepted command-line arguments are:
 
-- -Path: Path to the folder, project, or solution file.
-- -AddPackedLib: Path to a pre-built PPL (optional original source library name specified after "::"). Can specify multiple parameter/path pairs in one command.
+- -Path: Path to the folder, project, or solution file. Refer to the Path token section for details.
+- -AddPackedLib: Path to a pre-built PPL. Refer to the AddPackedLib token section for details.
 - -Quiet: Auto close once build as completed (should not be used with -Preview)
 - -Preview: Does not build but instead displays the list and build order of each build specification. Recommended for validation.
 
