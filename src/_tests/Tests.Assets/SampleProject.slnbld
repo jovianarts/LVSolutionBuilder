@@ -1,5 +1,5 @@
 <Solution>
 	<ProjectPath>SampleProject.lvproj</ProjectPath>
 	<ProjectPath>ExternalLibProject.lvproj</ProjectPath>
-	<AddPackedLib>..\obj\ExternalDep\ExtDependency.lvlibp::ExternalDep.lvlib</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\ExternalDep\ExtDependency.lvlibp::NAME=ExternalDep.lvlib</AddPackedLib>
 </Solution>

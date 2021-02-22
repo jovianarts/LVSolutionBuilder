@@ -152,9 +152,9 @@
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{B6939BC2-26BD-42D2-8E35-F3DAE568B172}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2019 (64-bit)</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{0F4FB023-A713-40CF-AC56-843EEEB44133}</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{1E3C5D81-5D10-421A-AE16-1FC585D2FB7D}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 f3</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{7D6295E5-8FB8-4BCE-B1CD-B5B396FA1D3F}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">National Instruments</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
@@ -165,8 +165,8 @@
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">SampleProject</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.0</Property>
-				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">19008005</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
 				<Property Name="MSI_arpCompany" Type="Str">National Instruments</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
 				<Property Name="MSI_distID" Type="Str">{0773F445-D9C3-48AB-B7DC-ECC0294C1EDE}</Property>
