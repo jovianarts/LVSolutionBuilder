@@ -2,6 +2,60 @@
 
 Solution Builder is a tool for building LabVIEW project build specifications in the correct order and, when some of those build specifications generate *Packed Project Libraries* (PPL, which have a .lvlibp extension), replacement are made in memory to allow dependent components to relink to build output instead of the original source.
 
+## Table of Contents
+
+- [List of Features](#list-of-features)
+- [Minimum Compatible LabVIEW Version](#minimum-compatible-labview-version)
+- [Use Case](#use-case)
+- [Usage](#usage)
+- [How to Build](#how-to-build)
+- [How to Test](#how-to-test)
+- [Contributions](#contributions)
+- [Known Issues](#known-issues)
+
+## List of Features
+
+
+<table>
+<tr><td style="text-align:center;font-weight:bold">Feature Description</td><td style="text-align:center;font-weight:bold">Minimum Version</td></tr>
+<tr><td>
+
+Accepts the following inputs:
+
+- A single project file
+- A directory containing project files to build in 1 session
+- A custom file that defines which projects to build in 1 session
+
+See [Usage](#usage).
+
+</td><td>Current source</td></tr><tr><td>
+
+Supports building of all Build Specifications.
+>Note: Zip files operate on files on disk, not files and their changes currently only in memory.
+
+</td><td>Current source</td></tr><tr><td>
+
+Does not make a copy of the source before building nor does the tool modify the original source code. Changes are made in memory.
+
+</td><td>Current source</td></tr><tr><td>
+
+Has mechanism to provides the path to a pre-built Packed Library so its source Library can be replaced at build-time. See [Usage](#usage).
+
+</td><td>Current source</td></tr><tr><td>
+
+Supports the use of customized Build Specifications.
+
+</td><td>Current source</td></tr><tr><td>
+
+Can be invoked from the command-line. See [Invoking by Command-line](#invoking-by-command-line).
+
+</td><td>Current source</td></tr><tr><td>
+
+Support building the Build Specifications specified under different Targets within the project. See [PR #17](https://github.com/jovianarts/LVSolutionBuilder/pull/17) for details and limitations. Refer to the tests for examples.
+
+</td><td>Current source</td></tr>
+</table>
+
 ## Minimum Compatible LabVIEW Version
 
 LabVIEW 2019 - Solution Builder uses a VI Server method introduced in LabVIEW 2019 to replace project items in memory.
@@ -320,8 +374,9 @@ This project welcomes Issues, Discussions, and Pull Requests.
 ## Known Issues
 
 <table>
-<tr><td style="text-align:center;font-weight:bold">Issue</td><td style="text-align:center;font-weight:bold">Workaround</td></tr>
-<tr><td>
+<tr><td style="text-align:center;font-weight:bold">ID</td><td style="text-align:center;font-weight:bold">Issue</td><td style="text-align:center;font-weight:bold">Workaround</td></tr>
+<tr><td>1</td><td>
+
 When running `SolutionBuilder.vi` from its parent project, if the application returns an error, there is a possibility that on the next runs an LV Application Builder error will be returned for reasons unexplained. The error is:
 
 ```
@@ -329,12 +384,24 @@ Error 1370 occurred at an unidentified location
 Possible reason(s):
 LabVIEW: (Hex 0x55A) The selected build failed to complete.
 ```
+
 </td><td>
+
 There are a few ways around the issue:
 <ul>
 <li>Exit LabVIEW and retry to build.</li>
 <li>Instead of running SolutionBuilder from its owning project, open the VI directly from `/src`.</li>
 <li>Instead of running SolutionBuilder from its owning project, open the VI directly from the built release LLB.</li>
 </ul>
+
+</td></tr>
+<tr><td>2</td><td>
+
+There is a limitation that when build different Targets from the same project, all Targets must be able to load the replaced PPL. When testing some RT Targets, the cRIO-9082 could build within the same project as My Computer. However, building for a cRIO-9068 had to be in separate project. The error generated implies some VIs are broken.
+
+</td><td>
+
+Split the build specifications between different projects, each containing the Targets that can load the same dependencies. See [PR #17](https://github.com/jovianarts/LVSolutionBuilder/pull/17) for details and limitations. Refer to the tests for examples.
+
 </td></tr>
 </table>
