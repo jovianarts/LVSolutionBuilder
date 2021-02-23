@@ -33,19 +33,19 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{F2DF8815-C340-41AC-A257-9C3D53424975}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleDependentLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleDependentLib</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{0B088D96-0633-4618-B192-84D6244D2EEC}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SampleDependentLib.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/SampleDependentLib/SampleDependentLib.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/SampleDependentLib.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/SampleDependentLib</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/NI_AB_TARGETNAME</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A49C5FF4-6C6B-46BB-B6DD-366255DE1F8A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{63484A98-0609-4135-8CA5-0726E5BBC76C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SampleDependentLib.lvlib</Property>
@@ -70,19 +70,19 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{C77E9408-E149-4BB0-ADA0-8AB32B2CB477}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleLib</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8ABE8629-BDB8-46C6-BB27-633AE8BB7153}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SampleLib.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/SampleLib/SampleLib.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/SampleLib.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/SampleLib</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/NI_AB_TARGETNAME</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{31CF1DD6-E873-4EE9-9866-93D0ABF87557}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{63484A98-0609-4135-8CA5-0726E5BBC76C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SampleLib.lvlib</Property>
@@ -181,7 +181,7 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{3E986474-43A7-45F1-ADA4-51EFAF80FFC9}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleDependentLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/cRIO-9082</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6E0ED20D-5EF4-4375-A61B-A3BCF1B15957}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
@@ -195,7 +195,7 @@
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A9CCF4DA-B131-44DF-98EE-EBE1325FB8AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{21A2A852-01CE-4602-9409-FC0AD21BF3AE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9082/SampleDependentLib.lvlib</Property>
@@ -220,7 +220,7 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{020A16F2-1984-4CB5-93FC-FCC6A170F692}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/cRIO-9082</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{A90A7459-E2AA-4AC6-A3EB-98F160860E9A}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
@@ -235,7 +235,7 @@
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A9CCF4DA-B131-44DF-98EE-EBE1325FB8AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{21A2A852-01CE-4602-9409-FC0AD21BF3AE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9082/SampleLib.lvlib</Property>

@@ -91,7 +91,7 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{10B785D6-8946-4A11-AF15-F02C5F6F5DE8}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleDependentLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/cRIO-9068</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{92931051-86D3-4F9C-8CB2-FF354F16C525}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
@@ -105,7 +105,7 @@
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{AE574C77-D69B-4B36-AA1A-D463CB0494B7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3AA4A4D4-E82C-4AA8-9C8F-CF8E740C7495}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9068/SampleDependentLib.lvlib</Property>
@@ -130,7 +130,7 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{91DD4582-104B-4F85-AE74-887FAA0A8F75}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/cRIO-9068</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{3850AACB-E2CA-47B1-BDA0-7E86C5D6AE0C}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
@@ -144,7 +144,7 @@
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{AE574C77-D69B-4B36-AA1A-D463CB0494B7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3AA4A4D4-E82C-4AA8-9C8F-CF8E740C7495}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9068/SampleLib.lvlib</Property>
@@ -243,7 +243,7 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{59EBFDBF-0907-4737-BDEE-7591DFF2ABFA}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleDependentLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_TARGETNAME</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F6BC0625-245D-4A71-8781-546A773D332B}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
@@ -257,7 +257,7 @@
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EC4B035A-EB3D-42B2-9542-0D43E0D4074E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{04BB72A6-444A-4F74-A839-C651F70A032F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9067/SampleDependentLib.lvlib</Property>
@@ -282,7 +282,7 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{5A34D01C-7391-4419-8E63-75BC2522D28D}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_TARGETNAME</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{ED31164E-C837-4935-9694-E44CCA5586A8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
@@ -296,7 +296,7 @@
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EC4B035A-EB3D-42B2-9542-0D43E0D4074E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{04BB72A6-444A-4F74-A839-C651F70A032F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9067/SampleLib.lvlib</Property>
