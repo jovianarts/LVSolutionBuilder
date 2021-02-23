@@ -38,18 +38,18 @@
 				<Property Name="Bld_buildSpecName" Type="Str">My Application</Property>
 				<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/MyApplication</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/MyApplication</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E912A177-1BC2-4676-ADDD-CFBBBDBEE124}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/MyApplication/Application.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyApplication/Application.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/MyApplication/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyApplication/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A49C5FF4-6C6B-46BB-B6DD-366255DE1F8A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35664B49-D137-4D43-AFBD-A0EA49FFF313}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
@@ -72,18 +72,18 @@
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{97BC368A-191A-44BC-BCC7-53C9A4832745}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">My Application Same Methods</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/MyApplicationSameMethods</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/MyApplicationSameMethods</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B5D786F1-CC1B-4290-973A-0B847D1111E4}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Application2.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/MyApplicationSameMethods/Application2.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyApplicationSameMethods/Application2.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/MyApplicationSameMethods/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyApplicationSameMethods/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A49C5FF4-6C6B-46BB-B6DD-366255DE1F8A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35664B49-D137-4D43-AFBD-A0EA49FFF313}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SampleDependentLib.lvlib/SampleDependentClass.lvclass/SampleMethod.vi</Property>
@@ -108,28 +108,27 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{AA851ADB-652A-4F29-ADEC-E0B3961AE99B}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{B8FAB35F-3870-4637-B2E2-E2CD0DF62EBA}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{9F5A6997-1072-4A85-8FD6-1F8A08700099}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">My DLL</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/MyDLL</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/MyDLL</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B2D7D636-6C57-4BAA-8F01-946E4633021B}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SharedLib.dll</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/MyDLL/SharedLib.dll</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyDLL/SharedLib.dll</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/MyDLL/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyDLL/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Dll_compatibilityWith2011" Type="Bool">false</Property>
 				<Property Name="Dll_delayOSMsg" Type="Bool">true</Property>
 				<Property Name="Dll_headerGUID" Type="Str">{B9CCFCF0-895D-414F-BB55-8ADDBCE4006E}</Property>
 				<Property Name="Dll_libGUID" Type="Str">{4035CD2F-8AAE-43CF-8B31-02CD0B389825}</Property>
 				<Property Name="Dll_privateExecSys" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A49C5FF4-6C6B-46BB-B6DD-366255DE1F8A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35664B49-D137-4D43-AFBD-A0EA49FFF313}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Helper/SampleCommonLib.lvlib/SampleCommonVI.vi</Property>
@@ -154,11 +153,48 @@
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[0].productID" Type="Str">{1E3C5D81-5D10-421A-AE16-1FC585D2FB7D}</Property>
 				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 f3</Property>
+				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
+				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
+				<Property Name="DistPart[0].SoftDep[1].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Deployment Framework 2019</Property>
+				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[0].SoftDep[10].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[0].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[0].SoftDep[11].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[11].productName" Type="Str">NI TDM Streaming 19.0</Property>
+				<Property Name="DistPart[0].SoftDep[11].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[0].SoftDep[2].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI Error Reporting 2019</Property>
+				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[0].SoftDep[3].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2019</Property>
+				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{8386B074-C90C-43A8-99F2-203BAAB4111C}</Property>
+				<Property Name="DistPart[0].SoftDep[4].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 Non-English Support.</Property>
+				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{446D49A5-F830-4ADF-8C78-F03284D6882D}</Property>
+				<Property Name="DistPart[0].SoftDep[5].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI Logos 19.0</Property>
+				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[0].SoftDep[6].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2019</Property>
+				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
+				<Property Name="DistPart[0].SoftDep[7].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[7].productName" Type="Str">NI mDNS Responder 19.0</Property>
+				<Property Name="DistPart[0].SoftDep[7].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[0].SoftDep[8].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[0].SoftDep[8].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[0].SoftDep[9].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[0].SoftDep[9].productName" Type="Str">Math Kernel Libraries 2018</Property>
+				<Property Name="DistPart[0].SoftDep[9].upgradeCode" Type="Str">{33A780B9-8BDE-4A3A-9672-24778EFBEFC4}</Property>
+				<Property Name="DistPart[0].SoftDepCount" Type="Int">12</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{7D6295E5-8FB8-4BCE-B1CD-B5B396FA1D3F}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">National Instruments</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../obj/MyInstaller</Property>
+				<Property Name="INST_buildLocation" Type="Path">../obj/SampleProject/MyInstaller</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
 				<Property Name="INST_buildSpecName" Type="Str">My Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{23BA94CC-7CB2-422B-A2C2-0B83B315021E}</Property>
@@ -195,21 +231,20 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{3303CF71-4F3E-42EA-A187-1360527B9432}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{BF257050-21A6-4EE6-8E5B-378F60CE2057}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{098497A0-C8B8-4611-868D-58E2AC96FC56}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">My Interop Assembly</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/MyInteropAssembly</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/MyInteropAssembly</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7645858C-D8AA-4BE2-828A-B6A6B8FA2396}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">InteropAssembly.dll</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/MyInteropAssembly/InteropAssembly.dll</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyInteropAssembly/InteropAssembly.dll</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/MyInteropAssembly/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyInteropAssembly/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="DotNET2011CompatibilityMode" Type="Bool">false</Property>
 				<Property Name="DotNETAssembly_ClassName" Type="Str">LabVIEWExports</Property>
@@ -218,7 +253,7 @@
 				<Property Name="DotNETAssembly_signAssembly" Type="Bool">false</Property>
 				<Property Name="DotNETAssembly_StrongNameKeyFileItemID" Type="Ref"></Property>
 				<Property Name="DotNETAssembly_StrongNameKeyGUID" Type="Str">{ACE4BC2B-E088-4400-BE57-54CB119CD7CC}</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A49C5FF4-6C6B-46BB-B6DD-366255DE1F8A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35664B49-D137-4D43-AFBD-A0EA49FFF313}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].ExportedAssemblyVI.VIProtoInfo[0]MethodName" Type="Str">Main</Property>
@@ -263,17 +298,17 @@
 				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
 				<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/MySourceDistribution</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/MySourceDistribution</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{CE1E3DD1-6FDA-4AC4-AE2F-95CA0C584080}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/MySourceDistribution</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/MySourceDistribution</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/MySourceDistribution/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/MySourceDistribution/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A49C5FF4-6C6B-46BB-B6DD-366255DE1F8A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35664B49-D137-4D43-AFBD-A0EA49FFF313}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
@@ -302,19 +337,19 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{F2DF8815-C340-41AC-A257-9C3D53424975}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleDependentLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleDependentLib</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/SampleDependentLib</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{0B088D96-0633-4618-B192-84D6244D2EEC}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SampleDependentLib.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/SampleDependentLib/SampleDependentLib.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/SampleDependentLib/SampleDependentLib.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/SampleDependentLib</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/SampleDependentLib</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A49C5FF4-6C6B-46BB-B6DD-366255DE1F8A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35664B49-D137-4D43-AFBD-A0EA49FFF313}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SampleDependentLib.lvlib</Property>
@@ -339,19 +374,19 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{C77E9408-E149-4BB0-ADA0-8AB32B2CB477}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SampleLib</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleLib</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/SampleLib</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8ABE8629-BDB8-46C6-BB27-633AE8BB7153}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SampleLib.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/SampleLib/SampleLib.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/SampleLib/SampleLib.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/SampleLib</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/SampleLib</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{31CF1DD6-E873-4EE9-9866-93D0ABF87557}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35664B49-D137-4D43-AFBD-A0EA49FFF313}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SampleLib.lvlib</Property>
