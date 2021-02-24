@@ -13,7 +13,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="TargetsDifferentCompilersLib.lvlib" Type="Library" URL="../TargetsDifferentCompilersLib.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="ExternalDep.lvlib" Type="Library" URL="../../ExternalDep/ExternalDep.lvlib"/>
+			<Item Name="ExternalDep.lvlib" Type="Library" URL="../../Tests.Assets/ExternalDep/ExternalDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="TargetsDifferentCompilers" Type="Packed Library">
@@ -116,7 +116,7 @@
 		</Item>
 		<Item Name="TargetsDifferentCompilersLib.lvlib" Type="Library" URL="../TargetsDifferentCompilersLib.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="ExternalDep.lvlib" Type="Library" URL="../../ExternalDep/ExternalDep.lvlib"/>
+			<Item Name="ExternalDep.lvlib" Type="Library" URL="../../Tests.Assets/ExternalDep/ExternalDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="TargetsDifferentCompilers" Type="Packed Library">
@@ -221,7 +221,7 @@
 		</Item>
 		<Item Name="TargetsDifferentCompilersLib.lvlib" Type="Library" URL="../TargetsDifferentCompilersLib.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="ExternalDep.lvlib" Type="Library" URL="../../ExternalDep/ExternalDep.lvlib"/>
+			<Item Name="ExternalDep.lvlib" Type="Library" URL="../../Tests.Assets/ExternalDep/ExternalDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="TargetsDifferentCompilers" Type="Packed Library">
@@ -326,7 +326,7 @@
 		</Item>
 		<Item Name="TargetsDifferentCompilersLib.lvlib" Type="Library" URL="../TargetsDifferentCompilersLib.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="ExternalDep.lvlib" Type="Library" URL="../../ExternalDep/ExternalDep.lvlib"/>
+			<Item Name="ExternalDep.lvlib" Type="Library" URL="../../Tests.Assets/ExternalDep/ExternalDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="TargetsDifferentCompilers" Type="Packed Library">
