@@ -1,0 +1,5 @@
+<Solution>
+	<ProjectPath>ExternalDepTargets.lvproj</ProjectPath>
+	<ProjectPath>SplitProjectTargets.lvproj</ProjectPath>
+	<ProjectPath>SplitProjectTargets_Linux.lvproj</ProjectPath>
+</Solution>

@@ -51,7 +51,7 @@ Can be invoked from the command-line. See [Invoking by Command-line](#invoking-b
 
 </td><td>Current source</td></tr><tr><td>
 
-Support building the Build Specifications specified under different Targets within the project. See [PR #17](https://github.com/jovianarts/LVSolutionBuilder/pull/17) for details and limitations. Refer to the tests for examples.
+Support building the Build Specifications specified under different Targets within the project. Refer to the tests for examples.
 
 </td><td>Current source</td></tr>
 </table>
@@ -395,13 +395,5 @@ There are a few ways around the issue:
 </ul>
 
 </td></tr>
-<tr><td>2</td><td>
 
-There is a limitation that when build different Targets from the same project, all Targets must be able to load the replaced PPL. When testing some RT Targets, the cRIO-9082 could build within the same project as My Computer. However, building for a cRIO-9068 had to be in separate project. The error generated implies some VIs are broken.
-
-</td><td>
-
-Split the build specifications between different projects, each containing the Targets that can load the same dependencies. See [PR #17](https://github.com/jovianarts/LVSolutionBuilder/pull/17) for details and limitations. Refer to the tests for examples.
-
-</td></tr>
 </table>

@@ -1,0 +1,7 @@
+<Solution>
+	<ProjectPath>TargetsDifferentCompilersAdvanced.lvproj</ProjectPath>
+	<AddPackedLib>PATH=..\obj\SampleProjectTargets\My Computer\ExtDependency.lvlibp::NAME=ExternalDep.lvlib</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\SampleProjectTargets\cRIO-9082\c\ni-rt\startup\ExtDependency.lvlibp::NAME=ExternalDep.lvlib::TARGET=cRIO-9082</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\SampleProjectTargets\cRIO-9067\home\lvuser\natinst\bin\ExtDependency.lvlibp::NAME=ExternalDep.lvlib::TARGET=cRIO-9067</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\SampleProjectTargets\cRIO-9068\home\lvuser\natinst\bin\ExtDependency.lvlibp::NAME=ExternalDep.lvlib::TARGET=cRIO-9068</AddPackedLib>
+</Solution>
