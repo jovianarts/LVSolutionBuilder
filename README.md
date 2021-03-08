@@ -58,7 +58,17 @@ Support building the Build Specifications specified under different Targets with
 
 ## Minimum Compatible LabVIEW Version
 
-LabVIEW 2019 - Solution Builder uses a VI Server method introduced in LabVIEW 2019 to replace project items in memory.
+__LabVIEW 2019 SP1__ - Solution Builder uses a VI Server method introduced in LabVIEW 2019 to replace project items in memory, and benefits from improvements made to SP1 for in-memory replacement.
+
+This tool is maintained using:
+
+|Name|Version|
+|---|---|
+|LabVIEW 2019|19.0.1f3|
+|LabVIEW Real-Time Module*|2019 f1|
+|NI CompactRIO*|19.6|
+
+>Note: * These modules only installed to test multi-target build support and are __not required__ for the tool to work as expected.
 
 ## Use Case
 
