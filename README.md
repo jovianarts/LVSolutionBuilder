@@ -28,32 +28,36 @@ Accepts the following inputs:
 
 See [Usage](#usage).
 
-</td><td>Current source</td></tr><tr><td>
+</td><td>1.0.1</td></tr><tr><td>
 
 Supports building of all Build Specifications.
 >Note: Zip files operate on files on disk, not files and their changes currently only in memory.
 
-</td><td>Current source</td></tr><tr><td>
+</td><td>1.0.1</td></tr><tr><td>
 
 Does not make a copy of the source before building nor does the tool modify the original source code. Changes are made in memory.
 
-</td><td>Current source</td></tr><tr><td>
+</td><td>1.0.1</td></tr><tr><td>
 
 Has mechanism to provides the path to a pre-built Packed Library so its source Library can be replaced at build-time. See [Usage](#usage).
 
-</td><td>Current source</td></tr><tr><td>
+</td><td>1.0.1</td></tr><tr><td>
 
 Supports the use of customized Build Specifications.
 
-</td><td>Current source</td></tr><tr><td>
+</td><td>1.0.1</td></tr><tr><td>
 
 Can be invoked from the command-line. See [Invoking by Command-line](#invoking-by-command-line).
 
-</td><td>Current source</td></tr><tr><td>
+</td><td>1.0.1</td></tr><tr><td>
 
 Support building the Build Specifications specified under different Targets within the project. Refer to the tests for examples.
 
-</td><td>Current source</td></tr>
+</td><td>1.0.1</td></tr><tr><td>
+
+Support replacing a PPL with a Target-specific PPL at build-time.
+
+</td><td>1.0.1</td></tr>
 </table>
 
 ## Minimum Compatible LabVIEW Version
