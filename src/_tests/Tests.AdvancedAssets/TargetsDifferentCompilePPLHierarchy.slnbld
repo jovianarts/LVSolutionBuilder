@@ -1,0 +1,5 @@
+<Solution>
+	<ProjectPath>TargetsDifferentCompilePPLHierarchyLibA.lvproj</ProjectPath>
+	<ProjectPath>TargetsDifferentCompilePPLHierarchyLibB.lvproj</ProjectPath>
+	<ProjectPath>TargetsDifferentCompilePPLHierarchyLibC.lvproj</ProjectPath>
+</Solution>
