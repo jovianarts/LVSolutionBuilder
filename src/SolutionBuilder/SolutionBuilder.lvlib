@@ -16,6 +16,7 @@
 	<Item Name="Locked" Type="Folder">
 		<Item Name="subCreateLocalInstance.vi" Type="VI" URL="../../Locked/subCreateLocalInstance.vi"/>
 		<Item Name="subGetDependencyInfoList.vi" Type="VI" URL="../../Locked/subGetDependencyInfoList.vi"/>
+		<Item Name="subGetProjectItemRefForFile.vi" Type="VI" URL="../../Locked/subGetProjectItemRefForFile.vi"/>
 	</Item>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
