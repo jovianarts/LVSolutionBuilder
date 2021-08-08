@@ -57,7 +57,11 @@ Support building the Build Specifications specified under different Targets with
 
 Support replacing a PPL with a Target-specific PPL at build-time.
 
-</td><td>1.0.1</td></tr>
+</td><td>1.0.1</td></tr><tr><td>
+
+Incremental builds. When building, a `.incrb` file is generated next to the project/solution file keeping track of files that last built.
+
+</td><td>1.0.2</td></tr>
 </table>
 
 ## Minimum Compatible LabVIEW Version
@@ -303,7 +307,13 @@ Solution Builder can be operated on through its user interface or [by command-li
 <tr><td>C:\This\Folder\solution file.slnfile</td><td>A file (the extension is ignored) listing the projects to build and any associated pre-built PPLs needed to build the projects.)</td></tr>
 </table>
 
-* __Preview?__ : Will run the algorithm to determine the dependency build order, but will not execute the projects' build specification.
+* __Log file path__ : Path to the file containing log information regarding decisions to rebuild an item or skip it because a previous build was deemed sufficient.
+
+* __Preview__ : Will run the algorithm to determine the dependency build order, but will not execute the projects' build specification.
+
+* __Force Rebuild__ : Ignores the incremental build information from previous runs and rebuilds everything.
+
+* __Cancel Build__ : Aborts a build, but waits for the current item to complete.
 
 * __Results Table__ : Displays the found build specification outputs and show their build status.
 
@@ -354,15 +364,32 @@ Valid formats are as follows and the path can be formated similar to ProjectPath
 Invoking the packed tool from its LLB requires a command similar to the following:
 
 ```
-Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path path_to_some_project\myProject.lvproj -Quiet -AddPackedLib PATH=path_to_some_ppl\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068
+Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild
 ```
 
 The accepted command-line arguments are:
 
-- -Path: Path to the folder, project, or solution file. Refer to the Path token section for details.
-- -AddPackedLib: Path to a pre-built PPL. Refer to the AddPackedLib token section for details.
-- -Quiet: Auto close once build as completed (should not be used with -Preview)
-- -Preview: Does not build but instead displays the list and build order of each build specification. Recommended for validation.
+- `-Path` : Path to the folder, project, or solution file. Refer to the Path token section for details.
+- `-LogFile` : Path to the file containing log information regarding decisions to rebuild an item or skip it because a previous build was deemed sufficient.
+- `-AddPackedLib` : Path to a pre-built PPL. Refer to the AddPackedLib token section for details.
+- `-Quiet` : Auto close once build as completed (should not be used with -Preview)
+- `-Preview` : Does not build but instead displays the list and build order of each build specification. Recommended for validation.
+- `-Rebuild` : Ignores the incremental build information from previous runs and rebuilds everything.
+
+### Incremental Builds
+
+Solution Builder supports some incremental builds. This means that the tool will do its best to determine if a Project Build Specification needs to rebuild. The algorithm to determine if an build specifation needs to rebuild is as follows:
+
+1. The `Rebuild` flag is set to `true` either from the command line or from the UI.
+2. The destination of the build output does not exist.
+3. The source files associated with the build specification have changed.
+4. Static dependencies of the source files associated with the build specification have changed.
+
+> Note: the tool determines that a source file has changed if the MD5 hash of a file does not match its previous hash. Hashes from previous runs are stored in a `.incrb` file next to the project/solution file.
+
+#### **Limitations of Incremental Builds**
+
+Source distribution currently do not know before they build which source files they are associated with. As a result, source distributions always rebuild.
 
 ## How to Build
 
