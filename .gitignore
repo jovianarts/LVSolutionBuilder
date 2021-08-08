@@ -17,9 +17,15 @@
 .cache/
 *build log.txt
 *.dgml
+*.incrb
 
 # Objects directory
 obj/
+
+# Editors
+# =========================
+.vs/
+.vscode/
 
 # Windows
 # =========================

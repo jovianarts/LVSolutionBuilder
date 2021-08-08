@@ -14,9 +14,7 @@
 		<Item Name="SampleDependentLibPPL.lvlib" Type="Library" URL="../TargetsDifferentCompilersAdvancedPPL/SampleDependentLibPPL.lvlib"/>
 		<Item Name="SampleLibPPL.lvlib" Type="Library" URL="../TargetsDifferentCompilersAdvancedPPL/SampleLibPPL.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="ExtDependency.lvlibp" Type="LVLibp" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp">
-				<Item Name="ExternalDepClass.lvclass" Type="LVClass" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp/ExternalDepClass/ExternalDepClass.lvclass"/>
-			</Item>
+			<Item Name="ExternalDepClass.lvclass" Type="LVClass" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp/ExternalDepClass/ExternalDepClass.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="SampleDependentLib" Type="Packed Library">
@@ -157,9 +155,7 @@
 		<Item Name="SampleDependentLibPPL.lvlib" Type="Library" URL="../TargetsDifferentCompilersAdvancedPPL/SampleDependentLibPPL.lvlib"/>
 		<Item Name="SampleLibPPL.lvlib" Type="Library" URL="../TargetsDifferentCompilersAdvancedPPL/SampleLibPPL.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="ExtDependency.lvlibp" Type="LVLibp" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp">
-				<Item Name="ExternalDepClass.lvclass" Type="LVClass" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp/ExternalDepClass/ExternalDepClass.lvclass"/>
-			</Item>
+			<Item Name="ExternalDepClass.lvclass" Type="LVClass" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp/ExternalDepClass/ExternalDepClass.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="SampleDependentLib" Type="Packed Library">
@@ -304,9 +300,7 @@
 		<Item Name="SampleDependentLibPPL.lvlib" Type="Library" URL="../TargetsDifferentCompilersAdvancedPPL/SampleDependentLibPPL.lvlib"/>
 		<Item Name="SampleLibPPL.lvlib" Type="Library" URL="../TargetsDifferentCompilersAdvancedPPL/SampleLibPPL.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="ExtDependency.lvlibp" Type="LVLibp" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp">
-				<Item Name="ExternalDepClass.lvclass" Type="LVClass" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp/ExternalDepClass/ExternalDepClass.lvclass"/>
-			</Item>
+			<Item Name="ExternalDepClass.lvclass" Type="LVClass" URL="../../obj/SampleProjectTargets/My Computer/ExtDependency.lvlibp/ExternalDepClass/ExternalDepClass.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="SampleDependentLib" Type="Packed Library">
