@@ -357,14 +357,16 @@ Valid formats are as follows and the path can be formated similar to ProjectPath
 </td></tr>
 </table>
 
-### Invoking by Command-line
+### Invoking by Comamnd-line using NI LabVIEW CLI
 
->Note: It's important to close LabVIEW between invocations of the tool from the command-line since LabVIEW only reads command-line arguments on launch. To read the new command-line arguments, LabVIEW must close and relaunch with the new arguments. To help with exiting LabVIEW between calls, use the `-Quiet` option.
+The build tool can be invoked using the LabVIEW CLI as a custom operation. The cleanest way to accomplish this is copying `\src\LabVIEW CLI Operation\*` to the appropriate directory as outlined here: https://zone.ni.com/reference/en-XX/help/371361R-01/lvhowto/cli_creating_operations/
 
-Invoking the packed tool from its LLB requires a command similar to the following:
+Note that if doing this, you'll also need to put the Solution Builder code in a search path, such as vi.lib or user.lib
+
+Otherwise you can execute using an additional operation directory as follows:
 
 ```
-Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild
+LabVIEWCLI -OperationName sb -AdditionalOperationDirectory "<path_to_repo>\src\LabVIEW CLI Operation" -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild 
 ```
 
 The accepted command-line arguments are:
@@ -375,6 +377,19 @@ The accepted command-line arguments are:
 - `-Quiet` : Auto close once build as completed (should not be used with -Preview)
 - `-Preview` : Does not build but instead displays the list and build order of each build specification. Recommended for validation.
 - `-Rebuild` : Ignores the incremental build information from previous runs and rebuilds everything.
+
+
+### Invoking by Command-line (traditional)
+
+>Note: It's important to close LabVIEW between invocations of the tool when using this method since LabVIEW only reads command-line arguments on launch. To read the new command-line arguments, LabVIEW must close and relaunch with the new arguments. To help with exiting LabVIEW between calls, use the `-Quiet` option.
+
+Invoking the packed tool from its LLB requires a command similar to the following:
+
+```
+Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild
+```
+
+Accepted command line arguments are as in NI LabVIEW CLI above.
 
 ### Incremental Builds
 
