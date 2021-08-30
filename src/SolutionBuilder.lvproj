@@ -50,7 +50,7 @@
 			</Item>
 			<Item Name="RunAllTests.vi" Type="VI" URL="../_tests/RunAllTests.vi"/>
 		</Item>
-		<Item Name="Solution Builder Operation.lvclass" Type="LVClass" URL="../LabVIEW CLI Operation/Solution Builder Operation.lvclass"/>
+		<Item Name="sb.lvclass" Type="LVClass" URL="../LabVIEW CLI Operation/sb.lvclass"/>
 		<Item Name="SolutionBuilder.lvlib" Type="Library" URL="../SolutionBuilder/SolutionBuilder.lvlib"/>
 		<Item Name="SolutionBuilder.vi" Type="VI" URL="../SolutionBuilder.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
