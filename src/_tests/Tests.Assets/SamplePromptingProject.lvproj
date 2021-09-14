@@ -33,7 +33,6 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{4E8E512E-D219-4B46-8A7C-406B79449C5C}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{AF904062-6A7A-462B-A307-AED822932325}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{FBB1A68B-4288-42AD-BFFC-FE39C605A6DA}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">My Application</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
@@ -48,7 +47,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/My Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A356EE29-7FE1-49F7-97DB-8F724438AA16}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B30F32AF-1DE3-43A6-88DD-63A94AC5E5E7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
@@ -137,6 +136,99 @@
 				<Property Name="PKG_sources[0].Type" Type="Str">EXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">SampleProject</Property>
 				<Property Name="PKG_version" Type="Str">1.0.0</Property>
+			</Item>
+			<Item Name="My Package2" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
+				<Property Name="NIPKG_certificates" Type="Bool">true</Property>
+				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
+				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/My Package2/Feed</Property>
+				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_installerArtifacts" Type="Str"></Property>
+				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
+				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/My Package2/Package Installer</Property>
+				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str"></Property>
+				<Property Name="NIPKG_license" Type="Ref"></Property>
+				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
+				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
+				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">false</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
+				<Property Name="PKG_buildNumber" Type="Int">0</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">My Package2</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_description" Type="Str"></Property>
+				<Property Name="PKG_destinations.Count" Type="Int">1</Property>
+				<Property Name="PKG_destinations[0].ID" Type="Str">{ACCAF770-3F69-462B-8985-43FDD8006482}</Property>
+				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">SamplePromptingProject</Property>
+				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_displayName" Type="Str">My Package2</Property>
+				<Property Name="PKG_displayVersion" Type="Str"></Property>
+				<Property Name="PKG_feedDescription" Type="Str"></Property>
+				<Property Name="PKG_feedName" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str"></Property>
+				<Property Name="PKG_hostname" Type="Str"></Property>
+				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;&gt;</Property>
+				<Property Name="PKG_output" Type="Path">../obj/NI_AB_PROJECTNAME/MyPackage2</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="PKG_packageName" Type="Str">sampleproject2</Property>
+				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
+				<Property Name="PKG_section" Type="Str">Application Software</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">1</Property>
+				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[0].Name" Type="Str">Application</Property>
+				<Property Name="PKG_shortcuts[0].Path" Type="Path">SamplePromptingProject</Property>
+				<Property Name="PKG_shortcuts[0].Target.Child" Type="Str">{7AAE21E1-BA26-43D3-8812-801B5A35E411}</Property>
+				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{ACCAF770-3F69-462B-8985-43FDD8006482}</Property>
+				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/My Application</Property>
+				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_sources.Count" Type="Int">2</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{ACCAF770-3F69-462B-8985-43FDD8006482}</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/My Application</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">EXE Build</Property>
+				<Property Name="PKG_sources[1].Destination" Type="Str">{ACCAF770-3F69-462B-8985-43FDD8006482}</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/My Packed Library</Property>
+				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
+				<Property Name="PKG_synopsis" Type="Str">SamplePromptingProject</Property>
+				<Property Name="PKG_version" Type="Str">1.0.0</Property>
+			</Item>
+			<Item Name="My Packed Library" Type="Packed Library">
+				<Property Name="Bld_buildCacheID" Type="Str">{8FC78DFD-AFB3-466B-810E-EA4C981ED297}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">My Packed Library</Property>
+				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME/MyPackedLibrary</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{69F90923-7A2B-4A9B-9756-9C2E0FA9363A}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">SampleDependentLib.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyPackedLibrary/SampleDependentLib.lvlibp</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/NI_AB_PROJECTNAME/MyPackedLibrary</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B30F32AF-1DE3-43A6-88DD-63A94AC5E5E7}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SampleDependentLib.lvlib</Property>
+				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">My Packed Library</Property>
+				<Property Name="TgtF_internalName" Type="Str">My Packed Library</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 National Instruments</Property>
+				<Property Name="TgtF_productName" Type="Str">My Packed Library</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{12923A85-5217-4CFF-A5E9-6E528F6698EF}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">SampleDependentLib.lvlibp</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="My Project Zip File" Type="Zip File">
 				<Property Name="Absolute[0]" Type="Bool">false</Property>
