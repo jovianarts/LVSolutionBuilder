@@ -406,11 +406,7 @@ Open and run `/src/_test/RunTheTests.vi` then verify that the results all pass.
 
 ## Contributions
 
-This project welcomes Issues, Discussions, and Pull Requests.
-
-1. Add new tests for the added functionality
-1. Verify that all the tests pass (refer to the [How to Test](#how-to-test) section)
-1. Submit a PR and fill out the template fully.
+This project welcomes Issues, Discussions, and Pull Requests. Review the [CONTRIBUTING](https://github.com/jovianarts/LVSolutionBuilder/blob/main/CONTRIBUTING.md) document for information.
 
 ## Known Issues
 
