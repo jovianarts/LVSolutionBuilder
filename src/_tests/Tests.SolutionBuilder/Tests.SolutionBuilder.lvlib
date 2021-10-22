@@ -11,9 +11,13 @@
 	<Item Name="test_BuildAdvancedAssets_TargetsDifferentCompilers.vi" Type="VI" URL="../test_BuildAdvancedAssets_TargetsDifferentCompilers.vi"/>
 	<Item Name="test_BuildAdvancedAssets_TargetsDifferentCompilersAdvanced.vi" Type="VI" URL="../test_BuildAdvancedAssets_TargetsDifferentCompilersAdvanced.vi"/>
 	<Item Name="test_BuildAssets.vi" Type="VI" URL="../test_BuildAssets.vi"/>
-	<Item Name="test_BuildAssetsIncrementalBuild.vi" Type="VI" URL="../test_BuildAssetsIncrementalBuild.vi"/>
-	<Item Name="test_CalculateSpecificationBuildOrder.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder.vi"/>
+	<Item Name="test_CalculateSpecificationBuildOrder_DynamicDispatchAssetsSolution.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder_DynamicDispatchAssetsSolution.vi"/>
+	<Item Name="test_CalculateSpecificationBuildOrder_SampleProject.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder_SampleProject.vi"/>
+	<Item Name="test_CalculateSpecificationBuildOrder_SampleProjectWithExternalDep.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder_SampleProjectWithExternalDep.vi"/>
+	<Item Name="test_CalculateSpecificationBuildOrder_SplitProjectTargetsSolution.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder_SplitProjectTargetsSolution.vi"/>
+	<Item Name="test_CalculateSpecificationBuildOrder_TargetsDifferentCompilersAdvancedPPLSolution.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder_TargetsDifferentCompilersAdvancedPPLSolution.vi"/>
 	<Item Name="test_ConstructorDefaultValues.vi" Type="VI" URL="../test_ConstructorDefaultValues.vi"/>
+	<Item Name="test_ExpandExternalDepsInLocation_TargetsDifferentCompilersAdvancedSolution.vi" Type="VI" URL="../test_ExpandExternalDepsInLocation_TargetsDifferentCompilersAdvancedSolution.vi"/>
 	<Item Name="test_FindProjects.vi" Type="VI" URL="../test_FindProjects.vi"/>
 	<Item Name="test_GetItemInformationFromProjects_SampleProject.vi" Type="VI" URL="../test_GetItemInformationFromProjects_SampleProject.vi"/>
 	<Item Name="test_GetItemInformationFromProjects_SampleProjectWithExternalDep.vi" Type="VI" URL="../test_GetItemInformationFromProjects_SampleProjectWithExternalDep.vi"/>
@@ -23,7 +27,31 @@
 	<Item Name="test_GetItemInfosFromProjectFile_HierarchyExampleProject.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_HierarchyExampleProject.vi"/>
 	<Item Name="test_GetItemInfosFromProjectFile_SampleProject.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_SampleProject.vi"/>
 	<Item Name="test_GetItemInfosFromProjectFile_SplitProjectTargetsSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_SplitProjectTargetsSolution.vi"/>
-	<Item Name="test_LoadCommandlineArgs.vi" Type="VI" URL="../test_LoadCommandlineArgs.vi"/>
-	<Item Name="test_ParseSolutionFile.vi" Type="VI" URL="../test_ParseSolutionFile.vi"/>
-	<Item Name="test_SetItemInfoDependencies.vi" Type="VI" URL="../test_SetItemInfoDependencies.vi"/>
+	<Item Name="test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedPPLSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedPPLSolution.vi"/>
+	<Item Name="test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedSolution.vi"/>
+	<Item Name="test_GetItemInfosFromProjectFile_TargetsDifferentCompilersSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_TargetsDifferentCompilersSolution.vi"/>
+	<Item Name="test_IncrementalBuild_SampleProjectSolution.vi" Type="VI" URL="../test_IncrementalBuild_SampleProjectSolution.vi"/>
+	<Item Name="test_LoadCommandlineArgs_AddPackedLibMissingPath.vi" Type="VI" URL="../test_LoadCommandlineArgs_AddPackedLibMissingPath.vi"/>
+	<Item Name="test_LoadCommandlineArgs_AddPackedLibWithAllParameters.vi" Type="VI" URL="../test_LoadCommandlineArgs_AddPackedLibWithAllParameters.vi"/>
+	<Item Name="test_LoadCommandlineArgs_AddPackedLibWithPath.vi" Type="VI" URL="../test_LoadCommandlineArgs_AddPackedLibWithPath.vi"/>
+	<Item Name="test_LoadCommandlineArgs_AddPackedLibWithPathCheckDefaults.vi" Type="VI" URL="../test_LoadCommandlineArgs_AddPackedLibWithPathCheckDefaults.vi"/>
+	<Item Name="test_LoadCommandlineArgs_DefaultCase.vi" Type="VI" URL="../test_LoadCommandlineArgs_DefaultCase.vi"/>
+	<Item Name="test_LoadCommandlineArgs_EmptyPath.vi" Type="VI" URL="../test_LoadCommandlineArgs_EmptyPath.vi"/>
+	<Item Name="test_LoadCommandlineArgs_InvalidParameter.vi" Type="VI" URL="../test_LoadCommandlineArgs_InvalidParameter.vi"/>
+	<Item Name="test_LoadCommandlineArgs_LogFile.vi" Type="VI" URL="../test_LoadCommandlineArgs_LogFile.vi"/>
+	<Item Name="test_LoadCommandlineArgs_MixedParameterSize.vi" Type="VI" URL="../test_LoadCommandlineArgs_MixedParameterSize.vi"/>
+	<Item Name="test_LoadCommandlineArgs_PathToProject.vi" Type="VI" URL="../test_LoadCommandlineArgs_PathToProject.vi"/>
+	<Item Name="test_LoadCommandlineArgs_Preview.vi" Type="VI" URL="../test_LoadCommandlineArgs_Preview.vi"/>
+	<Item Name="test_LoadCommandlineArgs_Quiet.vi" Type="VI" URL="../test_LoadCommandlineArgs_Quiet.vi"/>
+	<Item Name="test_LoadCommandlineArgs_SuccessFile.vi" Type="VI" URL="../test_LoadCommandlineArgs_SuccessFile.vi"/>
+	<Item Name="test_LoadCommandlineArgs_UnknownParameter.vi" Type="VI" URL="../test_LoadCommandlineArgs_UnknownParameter.vi"/>
+	<Item Name="test_ParseSolutionFile_ActiveTargets.vi" Type="VI" URL="../test_ParseSolutionFile_ActiveTargets.vi"/>
+	<Item Name="test_ParseSolutionFile_AddPackedLibs.vi" Type="VI" URL="../test_ParseSolutionFile_AddPackedLibs.vi"/>
+	<Item Name="test_ParseSolutionFile_DifferentPathFormats.vi" Type="VI" URL="../test_ParseSolutionFile_DifferentPathFormats.vi"/>
+	<Item Name="test_ParseSolutionFile_EmptyFile.vi" Type="VI" URL="../test_ParseSolutionFile_EmptyFile.vi"/>
+	<Item Name="test_ParseSolutionFile_TestAssetSolutions.vi" Type="VI" URL="../test_ParseSolutionFile_TestAssetSolutions.vi"/>
+	<Item Name="test_SetItemInfoDependencies_DynamicDispatchAssetsIndividuals.vi" Type="VI" URL="../test_SetItemInfoDependencies_DynamicDispatchAssetsIndividuals.vi"/>
+	<Item Name="test_SetItemInfoDependencies_SampleProject.vi" Type="VI" URL="../test_SetItemInfoDependencies_SampleProject.vi"/>
+	<Item Name="test_SetItemInfoDependencies_SampleProjectWithExternalDep.vi" Type="VI" URL="../test_SetItemInfoDependencies_SampleProjectWithExternalDep.vi"/>
+	<Item Name="test_SetItemInfoDependencies_TargetsDifferentCompilersAdvancedPPLSolution.vi" Type="VI" URL="../test_SetItemInfoDependencies_TargetsDifferentCompilersAdvancedPPLSolution.vi"/>
 </Library>

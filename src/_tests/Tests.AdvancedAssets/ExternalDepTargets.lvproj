@@ -19,20 +19,20 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{6833A304-9326-4BEE-8A84-CD3FA836FE97}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">ExternalDep</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME/deps</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{252F802F-5A48-410B-BC82-215F5F0BE57D}</Property>
 				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ExtDependency.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME/ExtDependency.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME/deps/ExtDependency.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME/deps</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7522B670-8723-473F-B866-F87C95853AE9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C4006883-DA33-40A4-8992-3A6605015A48}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ExternalDep.lvlib</Property>
@@ -124,18 +124,18 @@
 				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{446B53B5-8489-4309-962E-2B26776B5E13}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup/deps</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ExtDependency.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/ExtDependency.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/deps/ExtDependency.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup</Property>
+				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/deps</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A4ED73F4-91FC-4E89-A018-5ED02A2B5D8D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5E8763E4-3C78-4519-9516-8AAACFE86D88}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9082/ExternalDep.lvlib</Property>
@@ -226,18 +226,18 @@
 				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7AB2F5B0-EDB8-4765-98B5-7CE477F16E9A}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin/deps</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ExtDependency.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/ExtDependency.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/deps/ExtDependency.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/deps</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B6DAE365-01F7-449B-994E-35E4E583B9CD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9CB34BFE-241E-4D6E-8677-CE1AD8B6C43C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9068/ExternalDep.lvlib</Property>
@@ -329,18 +329,18 @@
 				<Property Name="Bld_localDestDir" Type="Path">../obj/SampleProjectTargets/NI_AB_TARGETNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{C73445EC-314F-4B94-AACF-530A50A56446}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin/deps</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ExtDependency.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/ExtDependency.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/deps/ExtDependency.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/deps</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{666E1D7E-F456-49C4-A64C-D6D76C1B7440}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1B5A845B-0747-482A-B5D2-50FDE5290F79}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/cRIO-9067/ExternalDep.lvlib</Property>

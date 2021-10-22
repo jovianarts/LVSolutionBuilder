@@ -7,4 +7,6 @@
 	<ProjectPath>/C/Linux/Absolute/Path.lvproj</ProjectPath>
 	<AddPackedLib>PATH=..\Relative\Path.lvlibp</AddPackedLib>
 	<AddPackedLib>PATH=/C/Linux/Absolute/Path.lvlibp::NAME=ThisPath.lvlib</AddPackedLib>
+	<ActiveTarget>My Computer</ActiveTarget>
+	<ActiveTarget>cRIO-9082</ActiveTarget>
 </Solution>
