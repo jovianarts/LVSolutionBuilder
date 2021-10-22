@@ -31,6 +31,8 @@
 	<Item Name="test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedSolution.vi"/>
 	<Item Name="test_GetItemInfosFromProjectFile_TargetsDifferentCompilersSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_TargetsDifferentCompilersSolution.vi"/>
 	<Item Name="test_IncrementalBuild_SampleProjectSolution.vi" Type="VI" URL="../test_IncrementalBuild_SampleProjectSolution.vi"/>
+	<Item Name="test_IncrementalBuild_SplitProjectTargetsSolution.vi" Type="VI" URL="../test_IncrementalBuild_SplitProjectTargetsSolution.vi"/>
+	<Item Name="test_LoadCommandlineArgs_ActiveTarget.vi" Type="VI" URL="../test_LoadCommandlineArgs_ActiveTarget.vi"/>
 	<Item Name="test_LoadCommandlineArgs_AddPackedLibMissingPath.vi" Type="VI" URL="../test_LoadCommandlineArgs_AddPackedLibMissingPath.vi"/>
 	<Item Name="test_LoadCommandlineArgs_AddPackedLibWithAllParameters.vi" Type="VI" URL="../test_LoadCommandlineArgs_AddPackedLibWithAllParameters.vi"/>
 	<Item Name="test_LoadCommandlineArgs_AddPackedLibWithPath.vi" Type="VI" URL="../test_LoadCommandlineArgs_AddPackedLibWithPath.vi"/>
@@ -38,6 +40,7 @@
 	<Item Name="test_LoadCommandlineArgs_DefaultCase.vi" Type="VI" URL="../test_LoadCommandlineArgs_DefaultCase.vi"/>
 	<Item Name="test_LoadCommandlineArgs_EmptyPath.vi" Type="VI" URL="../test_LoadCommandlineArgs_EmptyPath.vi"/>
 	<Item Name="test_LoadCommandlineArgs_InvalidParameter.vi" Type="VI" URL="../test_LoadCommandlineArgs_InvalidParameter.vi"/>
+	<Item Name="test_LoadCommandlineArgs_KeepSplitProjects.vi" Type="VI" URL="../test_LoadCommandlineArgs_KeepSplitProjects.vi"/>
 	<Item Name="test_LoadCommandlineArgs_LogFile.vi" Type="VI" URL="../test_LoadCommandlineArgs_LogFile.vi"/>
 	<Item Name="test_LoadCommandlineArgs_MixedParameterSize.vi" Type="VI" URL="../test_LoadCommandlineArgs_MixedParameterSize.vi"/>
 	<Item Name="test_LoadCommandlineArgs_PathToProject.vi" Type="VI" URL="../test_LoadCommandlineArgs_PathToProject.vi"/>
