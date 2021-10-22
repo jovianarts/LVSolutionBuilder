@@ -61,7 +61,15 @@ Support replacing a PPL with a Target-specific PPL at build-time.
 
 Incremental builds. When building, a `.incrb` file is generated next to the project/solution file keeping track of files that last built.
 
-</td><td>1.0.2</td></tr>
+</td><td>1.0.2</td></tr><tr><td>
+
+Update to the way Targets in a single project are built. Each Target item will now have a temporary project created on disk to enable correctly loading project dependencies that are compiled for that target type. This avoids have issues with previous conflicting dependencies that cannot be unloaded before the next target build. The `-KeepSplitProjects` input parameter was added to enable debugging if necessary.
+
+</td><td>Latest source</td></tr><tr><td>
+
+The `-ActiveTarget` parameter allows a project with multiple Targets defined to build only selective Targets.
+
+</td><td>Latest source</td></tr>
 </table>
 
 ## Minimum Compatible LabVIEW Version
@@ -364,7 +372,7 @@ Valid formats are as follows and the path can be formated similar to ProjectPath
 Invoking the packed tool from its LLB requires a command similar to the following:
 
 ```
-Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild
+Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild -ActiveTarget "My Computer" -ActiveTarget cRIO-9082 -KeepSplitProjects
 ```
 
 The accepted command-line arguments are:
@@ -375,6 +383,8 @@ The accepted command-line arguments are:
 - `-Quiet` : Auto close once build as completed (should not be used with -Preview)
 - `-Preview` : Does not build but instead displays the list and build order of each build specification. Recommended for validation.
 - `-Rebuild` : Ignores the incremental build information from previous runs and rebuilds everything.
+- `-ActiveTarget` : Specifies the Target under which the build specifications will build. Can specify many.
+- `-KeepSplitProjects` : Skips the split project clean-up step at the end of the build.
 
 ### Incremental Builds
 
