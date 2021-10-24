@@ -22,6 +22,9 @@
 		<Property Name="NI.SortType" Type="Int">0</Property>
 		<Item Name="Events.ctl" Type="VI" URL="../Events.ctl"/>
 	</Item>
+	<Item Name="Utility" Type="Folder">
+		<Item Name="TranslateLVSymbolicTokenToPath.vim" Type="VI" URL="../../Utility/TranslateLVSymbolicTokenToPath.vim"/>
+	</Item>
 	<Item Name="BuildManager.lvclass" Type="LVClass" URL="../BuildManager/BuildManager.lvclass"/>
 	<Item Name="ProjectItem.lvclass" Type="LVClass" URL="../ProjectItem/ProjectItem.lvclass"/>
 	<Item Name="SolutionBuilder.lvclass" Type="LVClass" URL="../SolutionBuilder.lvclass"/>
