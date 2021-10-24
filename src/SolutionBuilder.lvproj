@@ -48,6 +48,9 @@
 			<Item Name="Tests.SolutionBuilder" Type="Folder">
 				<Item Name="Tests.SolutionBuilder.lvlib" Type="Library" URL="../_tests/Tests.SolutionBuilder/Tests.SolutionBuilder.lvlib"/>
 			</Item>
+			<Item Name="Tests.Utility" Type="Folder">
+				<Item Name="Tests.Utility.lvlib" Type="Library" URL="../_tests/Tests.Utility/Tests.Utility.lvlib"/>
+			</Item>
 			<Item Name="RunAllTests.vi" Type="VI" URL="../_tests/RunAllTests.vi"/>
 		</Item>
 		<Item Name="SolutionBuilder.lvlib" Type="Library" URL="../SolutionBuilder/SolutionBuilder.lvlib"/>
