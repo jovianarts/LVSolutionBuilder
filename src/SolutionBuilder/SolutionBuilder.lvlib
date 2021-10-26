@@ -23,6 +23,7 @@
 		<Item Name="Events.ctl" Type="VI" URL="../Events.ctl"/>
 	</Item>
 	<Item Name="Utility" Type="Folder">
+		<Item Name="DetermineCommandLineArgs.vi" Type="VI" URL="../../Utility/DetermineCommandLineArgs.vi"/>
 		<Item Name="TranslateLVSymbolicTokenToPath.vim" Type="VI" URL="../../Utility/TranslateLVSymbolicTokenToPath.vim"/>
 	</Item>
 	<Item Name="BuildManager.lvclass" Type="LVClass" URL="../BuildManager/BuildManager.lvclass"/>
