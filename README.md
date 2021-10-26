@@ -69,6 +69,10 @@ Update to the way Targets in a single project are built. Each Target item will n
 
 The `-ActiveTarget` parameter allows a project with multiple Targets defined to build only selective Targets.
 
+</td><td>Latest source</td></tr><tr><td>
+
+Support for the LabVIEW CLI. See [Invoking using NI LabVIEW CLI](#invoking-using-ni-labview-cli) and [Enabling the LabVIEW CLI](#enabling-the-labview-cli).
+
 </td><td>Latest source</td></tr>
 </table>
 
@@ -365,26 +369,44 @@ Valid formats are as follows and the path can be formated similar to ProjectPath
 </td></tr>
 </table>
 
+### Invoking using NI LabVIEW CLI
+
+Begin by either downloading the latest [Release](https://github.com/jovianarts/LVSolutionBuilder/releases) or [building the latest source](#how-to-build), and the following then [Enabling the LabVIEW CLI](#enabling-the-labview-cli).
+
+Invoking the CLI requires a command similar to the following (See [List of accepted arguments](#list-of-accepted-arguments) for details):
+
+```
+:> LabVIEWCLI -OperationName BuildSolution -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild -ActiveTarget "My Computer" -ActiveTarget cRIO-9082 -KeepSplitProjects
+```
+
+To invoke the CLI with a custom path to the BuildSolution operation using the `-AdditionalOperationDirectory` parameter detailed in [Enabling the LabVIEW CLI](#enabling-the-labview-cli) Option 2.
+
 ### Invoking by Command-line
+
+Begin by either downloading the latest [Release](https://github.com/jovianarts/LVSolutionBuilder/releases) or [building the latest source](#how-to-build).
 
 >Note: It's important to close LabVIEW between invocations of the tool from the command-line since LabVIEW only reads command-line arguments on launch. To read the new command-line arguments, LabVIEW must close and relaunch with the new arguments. To help with exiting LabVIEW between calls, use the `-Quiet` option.
 
-Invoking the packed tool from its LLB requires a command similar to the following:
+Invoking the packed tool from its built LLB requires a command similar to the following (See [List of accepted arguments](#list-of-accepted-arguments) for details):
 
 ```
 Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild -ActiveTarget "My Computer" -ActiveTarget cRIO-9082 -KeepSplitProjects
 ```
 
-The accepted command-line arguments are:
+### List of accepted arguments
 
-- `-Path` : Path to the folder, project, or solution file. Refer to the Path token section for details.
-- `-LogFile` : Path to the file containing log information regarding decisions to rebuild an item or skip it because a previous build was deemed sufficient.
-- `-AddPackedLib` : Path to a pre-built PPL. Refer to the AddPackedLib token section for details.
-- `-Quiet` : Auto close once build as completed (should not be used with -Preview)
-- `-Preview` : Does not build but instead displays the list and build order of each build specification. Recommended for validation.
-- `-Rebuild` : Ignores the incremental build information from previous runs and rebuilds everything.
-- `-ActiveTarget` : Specifies the Target under which the build specifications will build. Can specify many.
-- `-KeepSplitProjects` : Skips the split project clean-up step at the end of the build.
+When using either the LabVIEW CLI or directly using the command-line, the following arguments are accepted:
+
+| Command | Description |
+|---|---|
+| `-Path` | Path to the folder, project, or solution file. Refer to the Path token section for details. |
+| `-LogFile` | Path to the file containing log information regarding decisions to rebuild an item or skip it because a previous build was deemed sufficient. |
+| `-AddPackedLib` | Path to a pre-built PPL. Refer to the AddPackedLib token section for details. |
+| `-Quiet` | Auto close once build as completed. Should not be used with `-Preview`. This mode is ignored when using the LabVIEW CLI. |
+| `-Preview` | Does not build but instead displays the list and build order of each build specification. Recommended for validation. |
+| `-Rebuild` | Ignores the incremental build information from previous runs and rebuilds everything. |
+| `-ActiveTarget` | Specifies the Target under which the build specifications will build. Can specify many. |
+| `-KeepSplitProjects` | Skips the split project clean-up step at the end of the build. |
 
 ### Incremental Builds
 
@@ -406,7 +428,27 @@ Source distribution currently do not know before they build which source files t
 The owning LabVIEW project contains a build specification to create a self-contained LLB.
 
 1. Open the project
-1. Right-click the build specifications and select *Build*.
+1. Right-click the build specifications and select *Build All*.
+
+Once built, the built binaries will be located in the `\LVSolutionBuilder\obj` folder. The contents of the `obj` directory are as follows:
+
+| Item/Folder | Description |
+|---|---|
+| `SolutionBuilder.llb` | The main LLB that contains Solution Builder and all its subVIs. `SolutionBuilder.vi` is listed as a Top-Level VI in the LLB. |
+| `Package` (folder) | An NI Package containing `SolutionBuilder.llb`. |
+| `LabVIEW CLI` (folder) | Contains folders and files that can be placed in `National Instruments\Shared\LabVIEW CLI` to enable the LabVIEW CLI functionality. The folder structure matches the files destination. |
+
+### Enabling the LabVIEW CLI
+
+There are 2 ways of invoking Solution Builder with the LabVIEW CLI. The first involves copying the built files to the CLI's known location (option 1). The second involves invoking the CLI with a custom path telling it where the built binaries can be found (option 2).
+
+__Option 1:__ After following the instructions in the [How to build](#how-to-build) section:
+
+1. Copy the `obj\LabVIEW CLI` folder to `<program_files>\National Instruments\Shared` to merge the built folder with the existing folder installed by LabVIEW.
+1. Copy the `obj\SolutionBuilder.llb` to the new `<program_files>\National Instruments\Shared\LabVIEW CLI\Operations\BuildSolution` folder.
+   - Note: To support multiple versions of LabVIEW, place the `SolutionBuilder.llb` inside a year-version subfolder. For example, `.\BuildSolution\2020\SolutionBuilder.llb`, etc. If no matching year-version subfolder is found, the CLI will look for the LLB in the root `.\BuildSolution` folder.
+
+__Option 2:__ Simply invoke the CLI while adding the following argument: `-AdditionalOperationDirectory "<path_to_llb_obj>\LabVIEW CLI\Operations\BuildSolution"`.
 
 ## How to Test
 
@@ -442,5 +484,16 @@ There are a few ways around the issue:
 </ul>
 
 </td></tr>
+<tr><td>2</td><td>
 
+There is a LabVIEW bug preventing the discovery of all libraries needing to be replaced in memory introduced in LabVIEW 2020 SP1 onward. It it takes special circumstances to manifest:
+1. A caller VI just use a dynamic dispatch VI of a child class that does not have it's own implementation,
+1. The caller VI must not reference the parent class directly
+1. The caller VI must be compiled in order for its BD to load when the VI is loaded.
+
+</td><td>
+
+There are currently no ways around the issue other than now entering the mentioned circumstances. An issue is filed to NI.
+
+</td></tr>
 </table>

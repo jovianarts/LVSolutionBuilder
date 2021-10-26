@@ -53,6 +53,13 @@
 			</Item>
 			<Item Name="RunAllTests.vi" Type="VI" URL="../_tests/RunAllTests.vi"/>
 		</Item>
+		<Item Name="CLI" Type="Folder">
+			<Item Name="Dependencies" Type="Folder">
+				<Item Name="CoreOperation.lvclass" Type="LVClass" URL="/&lt;nishared&gt;/LabVIEW CLI/Operations/CoreOperation/CoreOperation.lvclass"/>
+				<Item Name="Logger.lvclass" Type="LVClass" URL="/&lt;nishared&gt;/LabVIEW CLI/Operations/Utilities/Logger/Logger.lvclass"/>
+			</Item>
+			<Item Name="BuildSolution.lvclass" Type="LVClass" URL="../CLI/BuildSolution.lvclass"/>
+		</Item>
 		<Item Name="SolutionBuilder.lvlib" Type="Library" URL="../SolutionBuilder/SolutionBuilder.lvlib"/>
 		<Item Name="SolutionBuilder.vi" Type="VI" URL="../SolutionBuilder.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -121,11 +128,58 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="GetOperationError.vi" Type="VI" URL="/&lt;nishared&gt;/LabVIEW CLI/Operations/Utilities/GetOperationError.vi"/>
+			<Item Name="OperationErrorType.ctl" Type="VI" URL="/&lt;nishared&gt;/LabVIEW CLI/Operations/Utilities/OperationErrorType.ctl"/>
 			<Item Name="provcom_StringGlobals.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_StringGlobals.vi"/>
+			<Item Name="Verbosity.ctl" Type="VI" URL="/&lt;nishared&gt;/LabVIEW CLI/Operations/Utilities/Verbosity.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
+			<Item Name="CLI_BuildSolution" Type="Source Distribution">
+				<Property Name="Bld_buildCacheID" Type="Str">{5405E941-2A9B-4854-B48E-C3BBFBC142D4}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">CLI_BuildSolution</Property>
+				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
+				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[1]" Type="Path">resource/objmgr</Property>
+				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[2]" Type="Path">/C/ProgramData/National Instruments/InstCache/19.0</Property>
+				<Property Name="Bld_excludedDirectory[3]" Type="Path">/C/Users/Jovian/Documents/LabVIEW Data/2019(32-bit)/ExtraVILib</Property>
+				<Property Name="Bld_excludedDirectory[4]" Type="Path">instr.lib</Property>
+				<Property Name="Bld_excludedDirectory[4].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[5]" Type="Path">user.lib</Property>
+				<Property Name="Bld_excludedDirectory[5].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../obj/LabVIEW CLI/Operations/BuildSolution</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{F8BE2557-7A58-42C0-A78C-7B1DC1DA930A}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">4</Property>
+				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+				<Property Name="Destination[0].path" Type="Path">../obj/LabVIEW CLI/Operations/BuildSolution</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../obj/LabVIEW CLI/Operations/BuildSolution/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5E983276-27A9-48D2-A345-CDDDF5138F90}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CLI/BuildSolution.lvclass</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/CLI/BuildSolution.lvclass/GetHelp.vi</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/CLI/BuildSolution.lvclass/RunOperation.vi</Property>
+				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[4].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/CLI/Dependencies</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Exclude</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
+			</Item>
 			<Item Name="SolutionBuilder" Type="Source Distribution">
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{7CFED83F-5AB5-414B-A79E-BC1A1C5565F1}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">SolutionBuilder</Property>
 				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
@@ -142,15 +196,15 @@
 				<Property Name="Bld_localDestDir" Type="Path">../obj/NI_AB_PROJECTNAME.llb</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{167431DC-0194-4791-A0EA-37952ABDC34F}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../obj/NI_AB_PROJECTNAME.llb</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B59349D9-20B6-4F4C-9D09-8170E283B8A9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6D42B0FE-D69A-4635-92F3-48F707C51FDD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SolutionBuilder.vi</Property>
@@ -170,15 +224,15 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">true</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../obj/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">solutionbuilder_1.0.0-4_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">solutionbuilder_1.0.4-0_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
 				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
-				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">false</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">5</Property>
+				<Property Name="PKG_buildNumber" Type="Int">0</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">SolutionBuilderPackage</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -193,11 +247,27 @@
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
-				<Property Name="PKG_destinations.Count" Type="Int">1</Property>
+				<Property Name="PKG_destinations.Count" Type="Int">5</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{54B26084-84C4-4EB8-888A-32CD0CD8C552}</Property>
-				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">SolutionBuilder</Property>
+				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">National Instruments</Property>
 				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">root_5</Property>
 				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[1].ID" Type="Str">{84C5703A-7F25-4120-8240-6ABD90A530AC}</Property>
+				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">Shared</Property>
+				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">{54B26084-84C4-4EB8-888A-32CD0CD8C552}</Property>
+				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[2].ID" Type="Str">{8AD28C57-BA54-43F0-B2A6-D41E6493983D}</Property>
+				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">LabVIEW CLI</Property>
+				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">{84C5703A-7F25-4120-8240-6ABD90A530AC}</Property>
+				<Property Name="PKG_destinations[2].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[3].ID" Type="Str">{B5299D3C-8D3F-4B88-96AB-9D1529347516}</Property>
+				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">Operations</Property>
+				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">{8AD28C57-BA54-43F0-B2A6-D41E6493983D}</Property>
+				<Property Name="PKG_destinations[3].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[4].ID" Type="Str">{EC58DE05-9149-4F9E-94B2-D2263BCF5C76}</Property>
+				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">BuildSolution</Property>
+				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{B5299D3C-8D3F-4B88-96AB-9D1529347516}</Property>
+				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
 				<Property Name="PKG_displayName" Type="Str">SolutionBuilder</Property>
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
@@ -212,12 +282,15 @@
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Application Software</Property>
 				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
-				<Property Name="PKG_sources.Count" Type="Int">1</Property>
-				<Property Name="PKG_sources[0].Destination" Type="Str">{54B26084-84C4-4EB8-888A-32CD0CD8C552}</Property>
+				<Property Name="PKG_sources.Count" Type="Int">2</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{EC58DE05-9149-4F9E-94B2-D2263BCF5C76}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/SolutionBuilder</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
+				<Property Name="PKG_sources[1].Destination" Type="Str">{EC58DE05-9149-4F9E-94B2-D2263BCF5C76}</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/CLI_BuildSolution</Property>
+				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">SolutionBuilder</Property>
-				<Property Name="PKG_version" Type="Str">1.0.0</Property>
+				<Property Name="PKG_version" Type="Str">1.0.4</Property>
 			</Item>
 		</Item>
 	</Item>
