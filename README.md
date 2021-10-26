@@ -65,15 +65,15 @@ Incremental builds. When building, a `.incrb` file is generated next to the proj
 
 Update to the way Targets in a single project are built. Each Target item will now have a temporary project created on disk to enable correctly loading project dependencies that are compiled for that target type. This avoids have issues with previous conflicting dependencies that cannot be unloaded before the next target build. The `-KeepSplitProjects` input parameter was added to enable debugging if necessary.
 
-</td><td>1.0.4</td></tr><tr><td>
+</td><td>Latest source</td></tr><tr><td>
 
 The `-ActiveTarget` parameter allows a project with multiple Targets defined to build only selective Targets.
 
-</td><td>1.0.4</td></tr><tr><td>
+</td><td>Latest source</td></tr><tr><td>
 
 Support for the LabVIEW CLI. See [Invoking using NI LabVIEW CLI](#invoking-using-ni-labview-cli) and [Enabling the LabVIEW CLI](#enabling-the-labview-cli).
 
-</td><td>1.0.4</td></tr>
+</td><td>Latest source</td></tr>
 </table>
 
 ## Minimum Compatible LabVIEW Version
