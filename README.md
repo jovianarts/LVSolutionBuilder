@@ -493,7 +493,11 @@ There is a LabVIEW bug preventing the discovery of all libraries needing to be r
 
 </td><td>
 
-There are currently no ways around the issue other than now entering the mentioned circumstances. An issue is filed to NI.
+**Fixed by NI**
+
+NI has fixed the issue in a recent patch of LV 2020 SP1 (Released 09-Nov-2021). See the [list of bug fixes](https://www.ni.com/en-us/support/documentation/bugs/20/labview-2020-sp1-bug-fixes.html) bug number `1707381`. 
+
+Update to the most recent patch if you are running into this issue.
 
 </td></tr>
 </table>
