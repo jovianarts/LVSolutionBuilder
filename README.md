@@ -420,7 +420,7 @@ When using either the LabVIEW CLI or directly using the command-line, the follow
 | `-Rebuild` | Ignores the incremental build information from previous runs and rebuilds everything. |
 | `-ActiveTarget <targetname>` | Specifies the Target under which the build specifications will build. Can specify many. |
 | `-KeepSplitProjects` | Skips the split project clean-up step at the end of the build. |
-| `-Version <version_string>` | Specifies a version to apply to all build specifications that support a version. When no version is specified, the version already in the build specification will be used. String is in the format `major.minor.fix.build` |
+| `-Version <version_string>` | Specifies a version to apply to all build specifications that support a version. When no version is specified, the version already in the build specification will be used. To ensure consistency when building to match component versions, using the `-Rebuild` flag with this option is recommended. Additionally, if a Version is specified in multiple places (the UI, the command-line, a .slnbld file) the .slnbld file wins. String is in the format `major.minor.fix.build` |
 
 ### Incremental Builds
 

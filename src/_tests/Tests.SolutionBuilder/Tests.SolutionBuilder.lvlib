@@ -11,6 +11,7 @@
 	<Item Name="test_BuildAdvancedAssets_TargetsDifferentCompilers.vi" Type="VI" URL="../test_BuildAdvancedAssets_TargetsDifferentCompilers.vi"/>
 	<Item Name="test_BuildAdvancedAssets_TargetsDifferentCompilersAdvanced.vi" Type="VI" URL="../test_BuildAdvancedAssets_TargetsDifferentCompilersAdvanced.vi"/>
 	<Item Name="test_BuildAssets.vi" Type="VI" URL="../test_BuildAssets.vi"/>
+	<Item Name="test_BuildExternalDepSolutionWithVersion.vi" Type="VI" URL="../test_BuildExternalDepSolutionWithVersion.vi"/>
 	<Item Name="test_CalculateSpecificationBuildOrder_DynamicDispatchAssetsSolution.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder_DynamicDispatchAssetsSolution.vi"/>
 	<Item Name="test_CalculateSpecificationBuildOrder_SampleProject.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder_SampleProject.vi"/>
 	<Item Name="test_CalculateSpecificationBuildOrder_SampleProjectWithExternalDep.vi" Type="VI" URL="../test_CalculateSpecificationBuildOrder_SampleProjectWithExternalDep.vi"/>
