@@ -30,6 +30,7 @@
 	<Item Name="test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedPPLSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedPPLSolution.vi"/>
 	<Item Name="test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_TargetsDifferentCompilersAdvancedSolution.vi"/>
 	<Item Name="test_GetItemInfosFromProjectFile_TargetsDifferentCompilersSolution.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_TargetsDifferentCompilersSolution.vi"/>
+	<Item Name="test_GetItemInfosFromProjectFile_VersionSampleProject.vi" Type="VI" URL="../test_GetItemInfosFromProjectFile_VersionSampleProject.vi"/>
 	<Item Name="test_IncrementalBuild_SampleProjectSolution.vi" Type="VI" URL="../test_IncrementalBuild_SampleProjectSolution.vi"/>
 	<Item Name="test_IncrementalBuild_SplitProjectTargetsSolution.vi" Type="VI" URL="../test_IncrementalBuild_SplitProjectTargetsSolution.vi"/>
 	<Item Name="test_LoadCommandlineArgs_ActiveTarget.vi" Type="VI" URL="../test_LoadCommandlineArgs_ActiveTarget.vi"/>
@@ -48,6 +49,7 @@
 	<Item Name="test_LoadCommandlineArgs_Quiet.vi" Type="VI" URL="../test_LoadCommandlineArgs_Quiet.vi"/>
 	<Item Name="test_LoadCommandlineArgs_SuccessFile.vi" Type="VI" URL="../test_LoadCommandlineArgs_SuccessFile.vi"/>
 	<Item Name="test_LoadCommandlineArgs_UnknownParameter.vi" Type="VI" URL="../test_LoadCommandlineArgs_UnknownParameter.vi"/>
+	<Item Name="test_LoadCommandlineArgs_Version.vi" Type="VI" URL="../test_LoadCommandlineArgs_Version.vi"/>
 	<Item Name="test_ParseSolutionFile_ActiveTargets.vi" Type="VI" URL="../test_ParseSolutionFile_ActiveTargets.vi"/>
 	<Item Name="test_ParseSolutionFile_AddPackedLibs.vi" Type="VI" URL="../test_ParseSolutionFile_AddPackedLibs.vi"/>
 	<Item Name="test_ParseSolutionFile_DifferentPathFormats.vi" Type="VI" URL="../test_ParseSolutionFile_DifferentPathFormats.vi"/>
