@@ -73,6 +73,10 @@ The `-ActiveTarget` parameter allows a project with multiple Targets defined to 
 
 Support for the LabVIEW CLI. See [Invoking using NI LabVIEW CLI](#invoking-using-ni-labview-cli) and [Enabling the LabVIEW CLI](#enabling-the-labview-cli).
 
+</td><td>Latest source</td></tr><tr><td>
+
+ Specifying a `-Version` which applies to all build specifications that support a version allowing exports in a session to stay in sync. When no version is specified, the version already in the build specification will be used.
+
 </td><td>Latest source</td></tr>
 </table>
 
@@ -336,6 +340,7 @@ When using a solution file, the following is an example valid content tags:
 <Solution>
 	<ProjectPath></ProjectPath>
 	<AddPackedLib></AddPackedLib>
+	<Version></Version>
 </Solution>
 ```
 
@@ -353,7 +358,7 @@ When using a solution file, the following is an example valid content tags:
 	<ProjectPath>/C/Linux/Absolute/Path.lvproj</ProjectPath>
 ```
 </td></tr>
-<tr><td>AddPackedLib</td><td>Node that contains a path value to a pre-built PPL to be used during the specified build. Multiple <i>AddPackedLib</i> tags can be listed in a file. Additionally and optionally, when a source Library is named differently than its PPL counterpart, and the Target under which to make this substitution can be listed. The following sub-token are supported:
+<tr><td>AddPackedLib (Optional)</td><td>Node that contains a path value to a pre-built PPL to be used during the specified build. Multiple <i>AddPackedLib</i> tags can be listed in a file. Additionally and optionally, when a source Library is named differently than its PPL counterpart, and the Target under which to make this substitution can be listed. The following sub-token are supported:
 
 - `PATH=` Path to specify the path to the build PPL. This sub-token is required.
 - `NAME=` Name of the original library. This sub-token is optional. If no name is listed, the filename from the path will be used, minus the "p" in the extension. `ThisLib.lvlibp` will become `ThisLib.lvlib`.
@@ -367,6 +372,14 @@ Valid formats are as follows and the path can be formated similar to ProjectPath
 	<AddPackedLib>PATH=..\Relative\OtherPath.lvlibp::NAME=OriginalName.lvlib::TARGET=cRIO-9082</AddPackedLib>
 ```
 </td></tr>
+<tr><td>Version (Optional)</td><td>Node that contains the version to apply to all build specifications that support a version. Valid version formats are as follows:
+
+```
+	<Version>1.2</Version>
+	<Version>1.2.3</Version>
+	<Version>1.2.3.4</Version>
+```
+</td></tr>
 </table>
 
 ### Invoking using NI LabVIEW CLI
@@ -376,7 +389,7 @@ Begin by either downloading the latest [Release](https://github.com/jovianarts/L
 Invoking the CLI requires a command similar to the following (See [List of accepted arguments](#list-of-accepted-arguments) for details):
 
 ```
-:> LabVIEWCLI -OperationName BuildSolution -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild -ActiveTarget "My Computer" -ActiveTarget cRIO-9082 -KeepSplitProjects
+:> LabVIEWCLI -OperationName BuildSolution -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild -ActiveTarget "My Computer" -ActiveTarget cRIO-9082 -KeepSplitProjects -Version 1.2.3.4
 ```
 
 To invoke the CLI with a custom path to the BuildSolution operation using the `-AdditionalOperationDirectory` parameter detailed in [Enabling the LabVIEW CLI](#enabling-the-labview-cli) Option 2.
@@ -390,7 +403,7 @@ Begin by either downloading the latest [Release](https://github.com/jovianarts/L
 Invoking the packed tool from its built LLB requires a command similar to the following (See [List of accepted arguments](#list-of-accepted-arguments) for details):
 
 ```
-Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild -ActiveTarget "My Computer" -ActiveTarget cRIO-9082 -KeepSplitProjects
+Path_to_repo> "C:\program files\national instruments\LabVIEW 2020\LabVIEW.exe" <path_to_llb_obj>\SolutionBuilder.llb\SolutionBuilder.vi -- -Path <path_to_some_project>\myProject.lvproj -LogFile <path_to_some_log>\file.log -Quiet -AddPackedLib PATH=<path_to_some_ppl>\TheFile.lvlibp::NAME=TheOriginalLib.lvlib::TARGET=cRIO-9068 -Rebuild -ActiveTarget "My Computer" -ActiveTarget cRIO-9082 -KeepSplitProjects -Version 1.2.3.4
 ```
 
 ### List of accepted arguments
@@ -399,14 +412,15 @@ When using either the LabVIEW CLI or directly using the command-line, the follow
 
 | Command | Description |
 |---|---|
-| `-Path` | Path to the folder, project, or solution file. Refer to the Path token section for details. |
-| `-LogFile` | Path to the file containing log information regarding decisions to rebuild an item or skip it because a previous build was deemed sufficient. |
-| `-AddPackedLib` | Path to a pre-built PPL. Refer to the AddPackedLib token section for details. |
+| `-Path <path>` | Path to the folder, project, or solution file. Refer to the Path token section for details. |
+| `-LogFile <path>` | Path to the file containing log information regarding decisions to rebuild an item or skip it because a previous build was deemed sufficient. |
+| `-AddPackedLib <path>` | Path to a pre-built PPL. Refer to the AddPackedLib token section for details. |
 | `-Quiet` | Auto close once build as completed. Should not be used with `-Preview`. This mode is ignored when using the LabVIEW CLI. |
 | `-Preview` | Does not build but instead displays the list and build order of each build specification. Recommended for validation. |
 | `-Rebuild` | Ignores the incremental build information from previous runs and rebuilds everything. |
-| `-ActiveTarget` | Specifies the Target under which the build specifications will build. Can specify many. |
+| `-ActiveTarget <targetname>` | Specifies the Target under which the build specifications will build. Can specify many. |
 | `-KeepSplitProjects` | Skips the split project clean-up step at the end of the build. |
+| `-Version <version_string>` | Specifies a version to apply to all build specifications that support a version. When no version is specified, the version already in the build specification will be used. String is in the format `major.minor.fix.build` |
 
 ### Incremental Builds
 
