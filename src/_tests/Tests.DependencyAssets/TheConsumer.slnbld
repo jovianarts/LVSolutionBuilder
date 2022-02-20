@@ -1,0 +1,7 @@
+<Solution>
+	<ProjectPath>TheConsumer.lvproj</ProjectPath>
+	<AddPackedLib>PATH=..\obj\DependencyTests\ALevel2ClassCopy.lvlibp</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\DependencyTests\BaseClassDependency.lvlibp</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\DependencyTests\Level1Class.lvlibp</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\DependencyTests\Level2Class.lvlibp</AddPackedLib>
+</Solution>
