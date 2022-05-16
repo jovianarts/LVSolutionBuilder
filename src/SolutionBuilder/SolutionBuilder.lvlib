@@ -25,6 +25,7 @@
 	<Item Name="Utility" Type="Folder">
 		<Item Name="DetermineCommandLineArgs.vi" Type="VI" URL="../../Utility/DetermineCommandLineArgs.vi"/>
 		<Item Name="TranslateLVSymbolicTokenToPath.vim" Type="VI" URL="../../Utility/TranslateLVSymbolicTokenToPath.vim"/>
+		<Item Name="WriteToLogFile.vi" Type="VI" URL="../../Utility/WriteToLogFile.vi"/>
 	</Item>
 	<Item Name="BuildManager.lvclass" Type="LVClass" URL="../BuildManager/BuildManager.lvclass"/>
 	<Item Name="ProjectItem.lvclass" Type="LVClass" URL="../ProjectItem/ProjectItem.lvclass"/>

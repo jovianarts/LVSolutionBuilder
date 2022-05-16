@@ -1,6 +1,6 @@
 <Solution>
 	<ProjectPath>TargetsDifferentCompilersAdvanced.lvproj</ProjectPath>
-	<AddPackedLib>PATH=..\obj\SampleProjectTargets\My Computer\deps</AddPackedLib>
+	<AddPackedLib>PATH=..\obj\SampleProjectTargets\My Computer\deps::TARGET=My Computer</AddPackedLib>
 	<AddPackedLib>PATH=..\obj\SampleProjectTargets\cRIO-9082\c\ni-rt\startup\deps::TARGET=cRIO-9082</AddPackedLib>
 	<AddPackedLib>PATH=..\obj\SampleProjectTargets\cRIO-9067\home\lvuser\natinst\bin\deps::TARGET=cRIO-9067</AddPackedLib>
 	<AddPackedLib>PATH=..\obj\SampleProjectTargets\cRIO-9068\home\lvuser\natinst\bin\deps::TARGET=cRIO-9068</AddPackedLib>

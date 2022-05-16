@@ -18,6 +18,7 @@
 *build log.txt
 *.dgml
 *.incrb
+*.log
 
 # Objects directory
 obj/
