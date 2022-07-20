@@ -24,6 +24,8 @@
 	</Item>
 	<Item Name="Utility" Type="Folder">
 		<Item Name="DetermineCommandLineArgs.vi" Type="VI" URL="../../Utility/DetermineCommandLineArgs.vi"/>
+		<Item Name="Load VIs Into Memory.vi" Type="VI" URL="../../Utility/Load VIs Into Memory.vi"/>
+		<Item Name="Release VIs From Memory.vi" Type="VI" URL="../../Utility/Release VIs From Memory.vi"/>
 		<Item Name="TranslateLVSymbolicTokenToPath.vim" Type="VI" URL="../../Utility/TranslateLVSymbolicTokenToPath.vim"/>
 		<Item Name="WriteToLogFile.vi" Type="VI" URL="../../Utility/WriteToLogFile.vi"/>
 	</Item>
