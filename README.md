@@ -10,7 +10,7 @@ Solution Builder is a tool for building LabVIEW project build specifications in 
 - [Usage](#usage)
 - [How to Build](#how-to-build)
 - [How to Test](#how-to-test)
-- [Contributions](#contributions)
+- [Contributions](#contributions) (must read prior to PR submission)
 - [Known Issues](#known-issues)
 
 ## List of Features
