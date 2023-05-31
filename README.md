@@ -71,7 +71,7 @@ The `-ActiveTarget` parameter allows a project with multiple Targets defined to 
 
 </td><td>Latest source</td></tr><tr><td>
 
-Support for the LabVIEW CLI. See [Invoking using NI LabVIEW CLI](#invoking-using-ni-labview-cli) and [Enabling the LabVIEW CLI](#enabling-the-labview-cli).
+Support for the LabVIEW CLI. See [Invoking using NI LabVIEW CLI](#invoking-using-ni-labview-cli) and [Enabling the LabVIEW CLI](#enabling-the-labview-cli). Requires the `NI LabVIEW Command Line Interface` to be installed to build/use. This requirement is optional.
 
 </td><td>Latest source</td></tr><tr><td>
 
@@ -89,10 +89,14 @@ This tool is maintained using:
 |Name|Version|
 |---|---|
 |LabVIEW 2019|19.0.1f3|
-|LabVIEW Real-Time Module*|2019 f1|
-|NI CompactRIO*|19.6|
+|LabVIEW Real-Time Module`*`|2019 f1|
+|NI CompactRIO`*`|19.6|
+|NI LabVIEW Command Line Interface`**`|2.1|
 
->Note: * These modules only installed to test multi-target build support and are __not required__ for the tool to work as expected.
+> `*` These modules only installed to test multi-target build support and are __not required__ for the tool to work as expected.
+
+> `**` The CLI package is only a necessary if you plan to build and use the LabVIEW CLI feature.
+
 
 ## Use Case
 
@@ -442,7 +446,7 @@ Source distribution currently do not know before they build which source files t
 The owning LabVIEW project contains a build specification to create a self-contained LLB.
 
 1. Open the project
-1. Right-click the build specifications and select *Build All*.
+1. Expand the `Build Specification` entry in the project and build the component you want. Attempting to build the `LabVIEW CLI` build specification requires `NI LabVIEW Command Line Interface` to be installed; building the other components without the CLI installed is supported.
 
 Once built, the built binaries will be located in the `\LVSolutionBuilder\obj` folder. The contents of the `obj` directory are as follows:
 
@@ -450,7 +454,7 @@ Once built, the built binaries will be located in the `\LVSolutionBuilder\obj` f
 |---|---|
 | `SolutionBuilder.llb` | The main LLB that contains Solution Builder and all its subVIs. `SolutionBuilder.vi` is listed as a Top-Level VI in the LLB. |
 | `Package` (folder) | An NI Package containing `SolutionBuilder.llb`. |
-| `LabVIEW CLI` (folder) | Contains folders and files that can be placed in `National Instruments\Shared\LabVIEW CLI` to enable the LabVIEW CLI functionality. The folder structure matches the files destination. |
+| `LabVIEW CLI` (folder) | Contains folders and files that can be placed in `National Instruments\Shared\LabVIEW CLI` to enable the LabVIEW CLI functionality. The folder structure matches the files destination. _(Requires NI LabVIEW Command Line Interface to be installed)_|
 
 ### Enabling the LabVIEW CLI
 
