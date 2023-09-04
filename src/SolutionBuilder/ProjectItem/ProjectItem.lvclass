@@ -322,14 +322,32 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 	</Item>
-	<Item Name="GenerateEventItemBuilt.vi" Type="VI" URL="../GenerateEventItemBuilt.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%`!!!!#1!%!!!!1%"Q!"Y!!#M65W^M&gt;82J&lt;WZ#&gt;7FM:'6S,GRW&lt;'FC%V"S&lt;WJF9X2*&gt;'6N,GRW9WRB=X-!#V"S&lt;WJF9X2*&gt;'6N!""!-0````]'5G6T&gt;7RU!!!/1$$`````"%FU:7U!!""!-0````]'6'&amp;S:W6U!!!11$$`````"V"S&lt;WJF9X1!'%"1!!1!!Q!%!!5!!AF*&gt;'6N1H6J&lt;(1!31$RX&amp;&gt;S"1!!!!)65W^M&gt;82J&lt;WZ#&gt;7FM:'6S,GRW&lt;'FC%E6W:7ZU382F&lt;5*V;7RU,G.U&lt;!!91(!!'1!"!!9*382F&lt;5*V;7RU!&amp;1!]!!-!!!!!!!!!!!!!!!!!!!!!!!!!!%!!A!(!A!!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#!!!!1I!!!!)!!!!!!%!#!!!!!!</Property>
+	<Item Name="GenerateEventBuildingItem.vi" Type="VI" URL="../GenerateEventBuildingItem.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%3!!!!#1!%!!!!1%"Q!"Y!!#M65W^M&gt;82J&lt;WZ#&gt;7FM:'6S,GRW&lt;'FC%V"S&lt;WJF9X2*&gt;'6N,GRW9WRB=X-!#V"S&lt;WJF9X2*&gt;'6N!!Z!-0````]%382F&lt;1!!%%!Q`````Q:598*H:81!!""!-0````](5(*P;G6D&gt;!!11$$`````"F*F=X6M&gt;!!!(%"1!!1!!A!$!!1!"1R#&gt;7FM:'FO:UFU:7U!!"B!=!!:!!%!"AR#&gt;7FM:'FO:UFU:7U!!&amp;1!]!!-!!!!!!!!!!!!!!!!!!!!!!!!!!%!!!!(!A!!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!)!!!!!!%!#!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1118306816</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082925568</Property>
+	</Item>
+	<Item Name="GenerateEventItemBuilt.vi" Type="VI" URL="../GenerateEventItemBuilt.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%+!!!!#1!%!!!!1%"Q!"Y!!#M65W^M&gt;82J&lt;WZ#&gt;7FM:'6S,GRW&lt;'FC%V"S&lt;WJF9X2*&gt;'6N,GRW9WRB=X-!#V"S&lt;WJF9X2*&gt;'6N!""!-0````]'5G6T&gt;7RU!!!/1$$`````"%FU:7U!!""!-0````]'6'&amp;S:W6U!!!11$$`````"V"S&lt;WJF9X1!'%"1!!1!!Q!%!!5!!AF*&gt;'6N1H6J&lt;(1!&amp;%"Q!"E!!1!'#5FU:7V#&gt;7FM&gt;!"5!0!!$!!!!!!!!!!!!!!!!!!!!!!!!!!"!!)!"Q)!!(A!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!%+!!!!#!!!!!!"!!A!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
+	</Item>
+	<Item Name="GenerateEventSwappingLibs.vi" Type="VI" URL="../GenerateEventSwappingLibs.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%3!!!!#1!%!!!!1%"Q!"Y!!#M65W^M&gt;82J&lt;WZ#&gt;7FM:'6S,GRW&lt;'FC%V"S&lt;WJF9X2*&gt;'6N,GRW9WRB=X-!#V"S&lt;WJF9X2*&gt;'6N!!Z!-0````]%382F&lt;1!!%%!Q`````Q:598*H:81!!""!-0````](5(*P;G6D&gt;!!11$$`````"F*F=X6M&gt;!!!(%"1!!1!!A!$!!1!"1R4&gt;W&amp;Q='FO:URJ9H-!!"B!=!!:!!%!"AR4&gt;W&amp;Q='FO:URJ9H-!!&amp;1!]!!-!!!!!!!!!!!!!!!!!!!!!!!!!!%!!!!(!A!!?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!)!!!!!!%!#!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1074536960</Property>
 	</Item>
 	<Item Name="GenerateEventUpdateList.vi" Type="VI" URL="../GenerateEventUpdateList.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;%!!!!#1!%!!!!1%"Q!"Y!!#M65W^M&gt;82J&lt;WZ#&gt;7FM:'6S,GRW&lt;'FC%V"S&lt;WJF9X2*&gt;'6N,GRW9WRB=X-!#V"S&lt;WJF9X2*&gt;'6N!!Z!-0````]%382F&lt;1!!%%!Q`````Q:598*H:81!!""!-0````](5(*P;G6D&gt;!!11$$`````"F*F=X6M&gt;!!!'E"1!!1!!A!$!!1!"1J6='2B&gt;'6-;8.U!!"-!0(=6X([!!!!!B64&lt;WRV&gt;'FP&lt;E*V;7RE:8)O&lt;(:M;7)428:F&lt;H26='2B&gt;'6-;8.U,G.U&lt;!!;1(!!'1!"!!9+68"E982F4'FT&gt;!!!6!$Q!!Q!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!=#!!"Y!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!A!!!!!!1!)!!!!!!</Property>
